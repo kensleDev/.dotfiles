@@ -31,10 +31,10 @@ let g:which_key_map['r'] = [ ':Ranger'                    , 'ranger' ]
 let g:which_key_map['q'] = [ ':Startify'                  , 'startify' ]
 
 " Movement
-let g:which_key_map['j'] = [ '<C-W>h'                 , 'left' ]
-let g:which_key_map['k'] = [ '<C-W>j'                 , 'down' ]
-let g:which_key_map['l'] = [ '<C-W>k'                 , 'up' ]
-let g:which_key_map[';'] = [ '<C-W>l'                 , 'right' ]
+let g:which_key_map['j'] = [ '<C-\><C-n><C-W>h'                 , 'left' ]
+let g:which_key_map['k'] = [ '<C-\><C-n><C-W>j'                 , 'down' ]
+let g:which_key_map['l'] = [ '<C-\><C-n><C-W>k'                 , 'up' ]
+let g:which_key_map[';'] = [ '<C-\><C-n><C-W>l'                 , 'right' ]
 let g:which_key_map['J'] = [ ':windo wincmd K'        , 'change splits horizontal' ]
 let g:which_key_map['K'] = [ ':windo wincmd H'        , 'change splits vertical' ]
 
@@ -60,7 +60,6 @@ let g:which_key_map.c = {
      \ 'm' : [':CocList marketplace' , 'marketplace'],
      \ '' : [':tabclose' , 'back to split panes'],
      \ }
-
 
 
 let g:which_key_map.g = {

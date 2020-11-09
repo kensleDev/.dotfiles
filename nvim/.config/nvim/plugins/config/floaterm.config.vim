@@ -38,28 +38,3 @@ let g:floaterm_height=0.9
 " let g:floaterm_wintitle=0
 let g:floaterm_autoclose=1
 
-" Terminal go back to normal mode
-tnoremap <Esc> <C-\><C-n>
-" When switching to terminal windows it goes into insert mode automatically
-au BufEnter * if &buftype == 'terminal' | :startinsert | endif
-
-let g:term_buf = 0
-function! Term_toggle()
-  1wincmd w
-  if g:term_buf == bufnr("")
-    setlocal bufhidden=hide
-    close
-  else
-    rightbelow new
-    12winc -
-    try
-      exec "buffer ".g:term_buf
-    catch
-      call termopen("bash", {"detach": 0})
-      let g:term_buf = bufnr("")
-    endtry
-    set laststatus=0
-    startinsert!
-  endif
-endfunction
-nnoremap <A-x> :call Term_toggle()<cr>

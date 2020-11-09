@@ -16,7 +16,6 @@ call plug#begin('~/.vim/plugged')
 	Plug 'liuchengxu/vim-which-key'
 	Plug 'junegunn/fzf.vim'
 	Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-	Plug 'voldikss/vim-floaterm'
 	Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
   Plug 'mhinz/vim-startify'
 	Plug 'ChristianChiarulli/far.vim'
@@ -42,10 +41,11 @@ source $HOME/.config/nvim/plugins/config/quickscope.config.vim
 source $HOME/.config/nvim/plugins/config/fzf.config.vim
 source $HOME/.config/nvim/plugins/config/airline.config.vim
 source $HOME/.config/nvim/plugins/config/whichkey.config.vim
-source $HOME/.config/nvim/plugins/config/floaterm.config.vim
 source $HOME/.config/nvim/plugins/config/ranger.config.vim
 source $HOME/.config/nvim/plugins/config/start_page.config.vim
 source $HOME/.config/nvim/plugins/config/far.config.vim
 source $HOME/.config/nvim/plugins/config/signify.config.vim
 source $HOME/.config/nvim/plugins/config/easyescape.config.vim
 
+
+source $HOME/.config/nvim/plugins/config/terminal.config.vim

@@ -1,4 +1,9 @@
 CURRENT_USER=$(whoami)
+if [ -n "${NVIM_LISTEN_ADDRESS+x}" ]; then
+  alias h='nvr -o'
+  alias v='nvr -O'
+  alias t='nvr --remote-tab'
+fi
 
 alias=keys="sh /home/kd/.config/keyboard/keyboard_disable"
 
@@ -41,15 +46,15 @@ function git_upload_ssh_key () {
 
 
 function vim() {
-  /home/$CURRENT_USER/.config/nvim/nvim.appimage $1
+  NVIM_LISTEN_ADDRESS=/tmp/nvimsocket /home/$CURRENT_USER/.config/nvim/nvim.appimage $1
 }
 
 function nvim() {
-  /home/$CURRENT_USER/.config/nvim/nvim.appimage $1
+  NVIM_LISTEN_ADDRESS=/tmp/nvimsocket /home/$CURRENT_USER/.config/nvim/nvim.appimage $1
 }
 
 function v() {
-  /home/$CURRENT_USER/.config/nvim/nvim.appimage $1
+  NVIM_LISTEN_ADDRESS=/tmp/nvimsocket /home/$CURRENT_USER/.config/nvim/nvim.appimage $1
 }
 
 
@@ -98,7 +103,7 @@ alias es='sudo chmod u+x'
 
 # ---------------------------------TMUX
 
-alias t='tmux -f ~/.config/tmux/tmux.conf'
+alias tm='tmux -f ~/.config/tmux/tmux.conf'
 alias tas='tmux a -t'
 alias tks='tmux kill-session -t'
 alias tsc='tmux a -t sysconfig'

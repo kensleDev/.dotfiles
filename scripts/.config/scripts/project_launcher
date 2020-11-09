@@ -26,3 +26,6 @@ projects() {
 	cd $SELECTED
 	exec zsh
 }
+
+
+projects

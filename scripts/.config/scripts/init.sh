@@ -33,23 +33,18 @@ function git_upload_ssh_key () {
   curl -u "$githubuser:$githubpass" -X POST -d "{\"title\":\"`hostname`\",\"key\":\"$pub\"}" --header "x-github-otp: $otp" https://api.github.com/user/keys
 }
 
-# install zsh
-sudo apt-get install -y zsh curl &&
+# install base tools
+sudo apt-get install -y zsh curl stow &&
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended &&
 
-# if the script stoppped when installing oh my zsh resume from here
+# oh my zsh
 curl -L git.io/antigen > $HOME_DIR/.oh-my-zsh/plugins/antigen.zsh &&
 
 # # copy dotfiles
-# cp ../dotfiles/.zshrc $HOME_DIR &&
-# cp ../dotfiles/.alias $HOME_DIR &&
-# cp ../dotfiles/.gitconfig $HOME_DIR &&
-# log "Copied Dotfiles" &&
+cd ~/Dotfiles && stow * --adopt && cd ~/
 
 # setup Fonts
 sudo apt-get install fontconfig &&
-mkdir ~/.fonts &&
-cp ~/.config/fonts/VictorMono/TTF/* ~/.fonts &&
 sudo fc-cache -f -v &&
 log "setup fonts" &&
 
@@ -165,6 +160,7 @@ git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm &&
 
 # sudo apt-get install -y xmodmap xorg-xev xorg-setxkbmap xorg-xset:
 
+cd ~/Dotfiles && stow & --adopt && cd ~/
 
 # Clean up zsh
 echo "zsh" >> $HOME_DIR/.bashrc &&

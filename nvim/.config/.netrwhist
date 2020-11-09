@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =4
+let g:netrw_dirhist_4='/home/kd/.config'
+let g:netrw_dirhist_3='/home/kd/.config/goa-1.0'
+let g:netrw_dirhist_2='/home/kd/.config'
+let g:netrw_dirhist_1='/home/kd/repos/JulianIaquinandi'
+let g:netrw_dirhist_0='/home/kd/.config/nvim/plugins/config'
+let g:netrw_dirhist_9='/home/kd/.config/nvim/plugins'
+let g:netrw_dirhist_8='/home/kd/.config/nvim'
+let g:netrw_dirhist_7='/home/kd/.config/nvim/settings'
+let g:netrw_dirhist_6='/home/kd/.config/nvim'
+let g:netrw_dirhist_5='/home/kd/.config/nvim/plugins'

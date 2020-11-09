@@ -1,0 +1,20 @@
+# ------------------------------------ DESKTOP
+
+sudo apt install snapd
+sudo snap install rambox
+
+flatpak install --from https://firefox-flatpak.mojefedora.cz/org.mozilla.FirefoxDevEdition.flatpakref?
+flatpak install flathub-beta com.visualstudio.code.insiders
+flatpak install flathub com.bitwarden.desktop
+flatpak install flathub com.microsoft.Teams
+
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo dpkg -i google-chrome-stable_current_amd64.deb
+
+curl https://build.opensuse.org/projects/home:manuelschneid3r/public_key | sudo apt-key add -
+echo 'deb http://download.opensuse.org/repositories/home:/manuelschneid3r/xUbuntu_20.04/ /' | sudo tee /etc/apt/sources.list.d/home:manuelschneid3r.list
+sudo wget -nv https://download.opensuse.org/repositories/home:manuelschneid3r/xUbuntu_20.04/Release.key -O "/etc/apt/trusted.gpg.d/home:manuelschneid3r.asc"
+sudo apt update
+sudo apt install albert
+
+sudo apt-get install terminator gparted

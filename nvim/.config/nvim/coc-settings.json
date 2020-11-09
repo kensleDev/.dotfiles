@@ -1,0 +1,22 @@
+{
+  "coc.preferences.formatOnSaveFiletypes": [
+    "css",
+    "html",
+    "js",
+    "ts",
+    "json",
+    "vue"
+  ],
+  "snippets.ultisnips.directories": ["~/.config/nvim/snips"],
+
+  // explorer
+  "explorer.width": 50,
+  "explorer.icon.enableNerdfont": true,
+  "explorer.previewAction.onHover": false,
+  "explorer.keyMappings.global": {
+    "<cr>": ["expandable?", "expand", "open"],
+    "v": "open:vsplit"
+  },
+
+  "eslint.autoFixOnSave": true
+}

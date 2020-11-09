@@ -1,0 +1,28 @@
+#!/bin/bash
+
+projects() {
+
+
+	REPO_DIR=~/repos
+	cd $REPO_DIR 
+
+	dirs=(*/)
+
+	read -p "$(
+		f=0
+		for dirname in "${dirs[@]}" ; do
+			echo "$((++f)): $dirname"
+		done
+
+		echo -ne 'Please select a directory > '
+	)" selection
+
+	selected_dir="${dirs[$((selection-1))]}"
+
+	SELECTED="$REPO_DIR/$selected_dir"
+
+	echo $SELECTED
+
+	cd $SELECTED
+	exec zsh
+}

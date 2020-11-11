@@ -5,11 +5,10 @@
 --- 📓 looking into lua for writing plugins
 
 # TODO ⏲
-⏲ COMMAND - master f/F , ci - PLAY THE GAME 
+
+⏲ sort stow, tmux
 ⏲ nvim terminal
 ⏲ Get debugging working
-⏲ Kitty scrollback
-
 
 # Almsost Done 🐂
 
@@ -25,13 +24,14 @@
 🍰 Terminal binds fucked window bind - read ditching tmux article 
 ---📓 Terminal now works with alt + w/e/r , swaps seemlessly and is a buffer so
 is managed like any other
-
+🍰 Kitty scrollback - ctrl + shift + h 
 
 # EXPLORE 🎈
 
 🎈 cht.sh
-🎈 news room cli
+🎈 news room cli - newsboat 
 🎈 Play vim games - started and is working well DO MORE OF THIS 
+🎈 COMMAND - master f/F , ci - PLAY THE GAME 
 
 # RIP 💀
 

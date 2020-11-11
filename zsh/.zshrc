@@ -39,4 +39,4 @@ if [ "$TERM" != "linux" ] && [ -f "$GOPATH/bin/powerline-go" ]; then
 fi
 
 xmodmap ~/.config/keyboard/.xmodmap
-
+set NVIM_LISTEN_ADDRESS=/tmp/nvimsocket

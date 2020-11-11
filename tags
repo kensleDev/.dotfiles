@@ -75,15 +75,118 @@ Split	nvim/.config/nvim/settings/vscode-settings.vim	/^command! -complete=file -
 V	nvim/.config/nvim/settings/vscode-settings.vim	/^nnoremap <silent> <script> V V<SID>SetCursorLineNrColorVisual$/;"	m
 Vnew	nvim/.config/nvim/settings/vscode-settings.vim	/^command! -complete=file -nargs=? Vnew call <SID>split('v', '__vscode_new__')$/;"	c
 Vsplit	nvim/.config/nvim/settings/vscode-settings.vim	/^command! -complete=file -nargs=? Vsplit call <SID>split('v', <q-args>)$/;"	c
+__cleanup	tmux/.config/tmux/plugins/nord-tmux/nord.tmux	/^__cleanup() {$/;"	f
+__load	tmux/.config/tmux/plugins/nord-tmux/nord.tmux	/^__load() {$/;"	f
+_add_plugin_to_tmux_conf	tmux/.config/tmux/plugins/tmux-resurrect/lib/tmux-test/tests/helpers/helpers.sh	/^_add_plugin_to_tmux_conf() {$/;"	f
+_add_plugin_to_tmux_conf	tmux/.config/tmux/plugins/tmux-resurrect/tests/helpers/helpers.sh	/^_add_plugin_to_tmux_conf() {$/;"	f
+_add_plugin_to_tmux_conf	tmux/.config/tmux/plugins/tpm/lib/tmux-test/tests/helpers/helpers.sh	/^_add_plugin_to_tmux_conf() {$/;"	f
+_clone_the_plugin	tmux/.config/tmux/plugins/tmux-resurrect/lib/tmux-test/tests/helpers/helpers.sh	/^_clone_the_plugin() {$/;"	f
+_clone_the_plugin	tmux/.config/tmux/plugins/tmux-resurrect/tests/helpers/helpers.sh	/^_clone_the_plugin() {$/;"	f
+_clone_the_plugin	tmux/.config/tmux/plugins/tpm/lib/tmux-test/tests/helpers/helpers.sh	/^_clone_the_plugin() {$/;"	f
+_fatal_error_abort	tmux/.config/tmux/plugins/tpm/scripts/helpers/plugin_functions.sh	/^_fatal_error_abort() {$/;"	f
+_get_command_arguments	tmux/.config/tmux/plugins/tmux-resurrect/scripts/process_restore_helpers.sh	/^_get_command_arguments() {$/;"	f
+_get_command_strategy	tmux/.config/tmux/plugins/tmux-resurrect/scripts/process_restore_helpers.sh	/^_get_command_strategy() {$/;"	f
+_get_inline_strategy	tmux/.config/tmux/plugins/tmux-resurrect/scripts/process_restore_helpers.sh	/^_get_inline_strategy() {$/;"	f
+_get_proc_match_element	tmux/.config/tmux/plugins/tmux-resurrect/scripts/process_restore_helpers.sh	/^_get_proc_match_element() {$/;"	f
+_get_proc_restore_command	tmux/.config/tmux/plugins/tmux-resurrect/scripts/process_restore_helpers.sh	/^_get_proc_restore_command() {$/;"	f
+_get_proc_restore_element	tmux/.config/tmux/plugins/tmux-resurrect/scripts/process_restore_helpers.sh	/^_get_proc_restore_element() {$/;"	f
+_get_strategy_file	tmux/.config/tmux/plugins/tmux-resurrect/scripts/process_restore_helpers.sh	/^_get_strategy_file() {$/;"	f
+_get_user_tmux_conf	tmux/.config/tmux/plugins/tpm/scripts/helpers/plugin_functions.sh	/^_get_user_tmux_conf() {$/;"	f
+_has_emacs_mode_keys	tmux/.config/tmux/plugins/tpm/scripts/helpers/tmux_echo_functions.sh	/^_has_emacs_mode_keys() {$/;"	f
+_just_command	tmux/.config/tmux/plugins/tmux-resurrect/scripts/process_restore_helpers.sh	/^_just_command() {$/;"	f
+_manual_expansion	tmux/.config/tmux/plugins/tpm/scripts/helpers/plugin_functions.sh	/^_manual_expansion() {$/;"	f
+_proc_matches_full_command	tmux/.config/tmux/plugins/tmux-resurrect/scripts/process_restore_helpers.sh	/^_proc_matches_full_command() {$/;"	f
+_proc_starts_with_tildae	tmux/.config/tmux/plugins/tmux-resurrect/scripts/process_restore_helpers.sh	/^_proc_starts_with_tildae() {$/;"	f
+_process_on_the_restore_list	tmux/.config/tmux/plugins/tmux-resurrect/scripts/process_restore_helpers.sh	/^_process_on_the_restore_list() {$/;"	f
+_process_should_be_restored	tmux/.config/tmux/plugins/tmux-resurrect/scripts/process_restore_helpers.sh	/^_process_should_be_restored() {$/;"	f
+_restore_all_processes	tmux/.config/tmux/plugins/tmux-resurrect/scripts/process_restore_helpers.sh	/^_restore_all_processes() {$/;"	f
+_restore_list	tmux/.config/tmux/plugins/tmux-resurrect/scripts/process_restore_helpers.sh	/^_restore_list() {$/;"	f
+_save_command_strategy_file	tmux/.config/tmux/plugins/tmux-resurrect/scripts/save.sh	/^_save_command_strategy_file() {$/;"	f
+_sourced_files	tmux/.config/tmux/plugins/tpm/scripts/helpers/plugin_functions.sh	/^_sourced_files() {$/;"	f
+_strategy_exists	tmux/.config/tmux/plugins/tmux-resurrect/scripts/process_restore_helpers.sh	/^_strategy_exists() {$/;"	f
+_tmux_conf_contents	tmux/.config/tmux/plugins/tpm/scripts/helpers/plugin_functions.sh	/^_tmux_conf_contents() {$/;"	f
+_tpm_path	tmux/.config/tmux/plugins/tpm/scripts/helpers/plugin_functions.sh	/^_tpm_path() {$/;"	f
 ac	nvim/.config/nvim/plugins/config/coc.config.vim	/^omap ac <Plug>(coc-classobj-a)$/;"	m
 add	nvim/.config/nvim/rplugin/node/todo/src/utils.js	/^  add: (type, logMsg) => {$/;"	p	class:const
 add	nvim/.config/nvim/rplugin/node/todoPlug/utils.js	/^  add: (type, logMsg) => {$/;"	p	class:const
+add_files_to_gitignore	tmux/.config/tmux/plugins/tmux-resurrect/lib/tmux-test/setup	/^add_files_to_gitignore() {$/;"	f
+add_files_to_gitignore	tmux/.config/tmux/plugins/tpm/lib/tmux-test/setup	/^add_files_to_gitignore() {$/;"	f
 af	nvim/.config/nvim/plugins/config/coc.config.vim	/^omap af <Plug>(coc-funcobj-a)$/;"	m
+all_test_files	tmux/.config/tmux/plugins/tmux-resurrect/lib/tmux-test/tests/run_tests_in_isolation	/^all_test_files() {$/;"	f
+all_test_files	tmux/.config/tmux/plugins/tmux-resurrect/tests/run_tests_in_isolation	/^all_test_files() {$/;"	f
+all_test_files	tmux/.config/tmux/plugins/tpm/lib/tmux-test/tests/run_tests_in_isolation	/^all_test_files() {$/;"	f
 backtrace	scripts/.config/scripts/lib.trap.sh	/^function backtrace$/;"	f
+cache_tmux_default_command	tmux/.config/tmux/plugins/tmux-resurrect/scripts/restore.sh	/^cache_tmux_default_command() {$/;"	f
+capture_pane_contents	tmux/.config/tmux/plugins/tmux-resurrect/scripts/save.sh	/^capture_pane_contents() {$/;"	f
+capture_pane_contents_option_on	tmux/.config/tmux/plugins/tmux-resurrect/scripts/helpers.sh	/^capture_pane_contents_option_on() {$/;"	f
+check_binding_defined	tmux/.config/tmux/plugins/tpm/tests/test_plugin_sourcing.sh	/^check_binding_defined() {$/;"	f
+check_dir_exists_helper	tmux/.config/tmux/plugins/tpm/tests/helpers/tpm.sh	/^check_dir_exists_helper() {$/;"	f
+check_saved_session_exists	tmux/.config/tmux/plugins/tmux-resurrect/scripts/restore.sh	/^check_saved_session_exists() {$/;"	f
+check_tpm_path	tmux/.config/tmux/plugins/tpm/tests/test_plugin_sourcing.sh	/^check_tpm_path() {$/;"	f
+clean_plugins	tmux/.config/tmux/plugins/tpm/scripts/clean_plugins.sh	/^clean_plugins() {$/;"	f
+clone	tmux/.config/tmux/plugins/tpm/scripts/install_plugins.sh	/^clone() {$/;"	f
+clone_plugin	tmux/.config/tmux/plugins/tpm/scripts/install_plugins.sh	/^clone_plugin() {$/;"	f
 closeOtherEditors	nvim/.config/nvim/settings/vscode-settings.vim	/^function! s:closeOtherEditors()$/;"	f
+command_exists	tmux/.config/tmux/plugins/tmux-sensible/sensible.tmux	/^command_exists() {$/;"	f
+copy_travis_yml	tmux/.config/tmux/plugins/tmux-resurrect/lib/tmux-test/setup	/^copy_travis_yml() {$/;"	f
+copy_travis_yml	tmux/.config/tmux/plugins/tpm/lib/tmux-test/setup	/^copy_travis_yml() {$/;"	f
+create_directory_for_tests	tmux/.config/tmux/plugins/tmux-resurrect/lib/tmux-test/setup	/^create_directory_for_tests() {$/;"	f
+create_directory_for_tests	tmux/.config/tmux/plugins/tpm/lib/tmux-test/setup	/^create_directory_for_tests() {$/;"	f
+create_new_tmux_session	tmux/.config/tmux/plugins/tmux_nvr/scripts/new_session.sh	/^create_new_tmux_session() {$/;"	f
+create_test_plugin_helper	tmux/.config/tmux/plugins/tpm/tests/test_plugin_sourcing.sh	/^create_test_plugin_helper() {$/;"	f
+create_tmux_test_environment_and_save	tmux/.config/tmux/plugins/tmux-resurrect/tests/test_resurrect_save.sh	/^create_tmux_test_environment_and_save() {$/;"	f
+detect_if_restoring_from_scratch	tmux/.config/tmux/plugins/tmux-resurrect/scripts/restore.sh	/^detect_if_restoring_from_scratch() {$/;"	f
+detect_if_restoring_pane_contents	tmux/.config/tmux/plugins/tmux-resurrect/scripts/restore.sh	/^detect_if_restoring_pane_contents() {$/;"	f
+display_help	tmux/.config/tmux/plugins/tmux-resurrect/lib/tmux-test/run_tests	/^display_help() {$/;"	f
+display_help	tmux/.config/tmux/plugins/tmux-resurrect/run_tests	/^display_help() {$/;"	f
+display_help	tmux/.config/tmux/plugins/tpm/lib/tmux-test/run_tests	/^display_help() {$/;"	f
+display_message	tmux/.config/tmux/plugins/tmux-resurrect/scripts/check_tmux_version.sh	/^display_message() {$/;"	f
+display_message	tmux/.config/tmux/plugins/tmux-resurrect/scripts/helpers.sh	/^display_message() {$/;"	f
+display_message	tmux/.config/tmux/plugins/tmux_nvr/scripts/common.sh	/^display_message() {$/;"	f
+display_message	tmux/.config/tmux/plugins/tpm/scripts/check_tmux_version.sh	/^display_message() {$/;"	f
+display_plugin_update_list	tmux/.config/tmux/plugins/tpm/bindings/update_plugins	/^display_plugin_update_list() {$/;"	f
+dump_grouped_sessions	tmux/.config/tmux/plugins/tmux-resurrect/scripts/save.sh	/^dump_grouped_sessions() {$/;"	f
+dump_pane_contents	tmux/.config/tmux/plugins/tmux-resurrect/scripts/save.sh	/^dump_pane_contents() {$/;"	f
+dump_panes	tmux/.config/tmux/plugins/tmux-resurrect/scripts/save.sh	/^dump_panes() {$/;"	f
+dump_panes_raw	tmux/.config/tmux/plugins/tmux-resurrect/scripts/save.sh	/^dump_panes_raw() {$/;"	f
+dump_shell_history	tmux/.config/tmux/plugins/tmux-resurrect/scripts/save.sh	/^dump_shell_history() {$/;"	f
+dump_state	tmux/.config/tmux/plugins/tmux-resurrect/scripts/save.sh	/^dump_state() {$/;"	f
+dump_windows	tmux/.config/tmux/plugins/tmux-resurrect/scripts/save.sh	/^dump_windows() {$/;"	f
+dump_windows_raw	tmux/.config/tmux/plugins/tmux-resurrect/scripts/save.sh	/^dump_windows_raw(){$/;"	f
+echo_err	tmux/.config/tmux/plugins/tpm/scripts/helpers/shell_echo_functions.sh	/^echo_err() {$/;"	f
+echo_err	tmux/.config/tmux/plugins/tpm/scripts/helpers/tmux_echo_functions.sh	/^echo_err() {$/;"	f
+echo_ok	tmux/.config/tmux/plugins/tpm/scripts/helpers/shell_echo_functions.sh	/^echo_ok() {$/;"	f
+echo_ok	tmux/.config/tmux/plugins/tpm/scripts/helpers/tmux_echo_functions.sh	/^echo_ok() {$/;"	f
+end_message	tmux/.config/tmux/plugins/tpm/scripts/helpers/tmux_echo_functions.sh	/^end_message() {$/;"	f
+ensure_tpm_path_exists	tmux/.config/tmux/plugins/tpm/scripts/helpers/utility.sh	/^ensure_tpm_path_exists() {$/;"	f
 env	nvim/.config/nvim/rplugin/node/todo/.eslintrc.js	/^    'env': {$/;"	p	class:module.exports
+execute_hook	tmux/.config/tmux/plugins/tmux-resurrect/scripts/helpers.sh	/^execute_hook() {$/;"	f
 exit_handler	scripts/.config/scripts/lib.trap.sh	/^function exit_handler ()$/;"	f
+exit_helper	tmux/.config/tmux/plugins/tmux-resurrect/lib/tmux-test/tests/helpers/helpers.sh	/^exit_helper() {$/;"	f
+exit_helper	tmux/.config/tmux/plugins/tmux-resurrect/tests/helpers/helpers.sh	/^exit_helper() {$/;"	f
+exit_helper	tmux/.config/tmux/plugins/tpm/lib/tmux-test/tests/helpers/helpers.sh	/^exit_helper() {$/;"	f
+exit_if_unsupported_version	tmux/.config/tmux/plugins/tmux-resurrect/scripts/check_tmux_version.sh	/^exit_if_unsupported_version() {$/;"	f
+exit_if_unsupported_version	tmux/.config/tmux/plugins/tpm/scripts/check_tmux_version.sh	/^exit_if_unsupported_version() {$/;"	f
+exit_message	tmux/.config/tmux/plugins/tmux-resurrect/lib/tmux-test/run_tests	/^exit_message() {$/;"	f
+exit_message	tmux/.config/tmux/plugins/tmux-resurrect/run_tests	/^exit_message() {$/;"	f
+exit_message	tmux/.config/tmux/plugins/tpm/lib/tmux-test/run_tests	/^exit_message() {$/;"	f
+exit_safely_if_empty_ppid	tmux/.config/tmux/plugins/tmux-resurrect/save_command_strategies/gdb.sh	/^exit_safely_if_empty_ppid() {$/;"	f
+exit_safely_if_empty_ppid	tmux/.config/tmux/plugins/tmux-resurrect/save_command_strategies/linux_procfs.sh	/^exit_safely_if_empty_ppid() {$/;"	f
+exit_safely_if_empty_ppid	tmux/.config/tmux/plugins/tmux-resurrect/save_command_strategies/pgrep.sh	/^exit_safely_if_empty_ppid() {$/;"	f
+exit_safely_if_empty_ppid	tmux/.config/tmux/plugins/tmux-resurrect/save_command_strategies/ps.sh	/^exit_safely_if_empty_ppid() {$/;"	f
+exit_value_helper	tmux/.config/tmux/plugins/tpm/scripts/helpers/utility.sh	/^exit_value_helper() {$/;"	f
 f	nvim/.config/nvim/plugins/config/easymotion.vim	/^nmap f <Plug>(easymotion-overwin-f2)$/;"	m
+fail_helper	tmux/.config/tmux/plugins/tmux-resurrect/lib/tmux-test/tests/helpers/helpers.sh	/^fail_helper() {$/;"	f
+fail_helper	tmux/.config/tmux/plugins/tmux-resurrect/tests/helpers/helpers.sh	/^fail_helper() {$/;"	f
+fail_helper	tmux/.config/tmux/plugins/tpm/lib/tmux-test/tests/helpers/helpers.sh	/^fail_helper() {$/;"	f
+fail_helper	tmux/.config/tmux/plugins/tpm/scripts/helpers/utility.sh	/^fail_helper() {$/;"	f
+fetch_and_dump_grouped_sessions	tmux/.config/tmux/plugins/tmux-resurrect/scripts/save.sh	/^fetch_and_dump_grouped_sessions(){$/;"	f
+files_differ	tmux/.config/tmux/plugins/tmux-resurrect/scripts/helpers.sh	/^files_differ() {$/;"	f
+first_window_num	tmux/.config/tmux/plugins/tmux-resurrect/scripts/restore.sh	/^first_window_num() {$/;"	f
+full_command	tmux/.config/tmux/plugins/tmux-resurrect/save_command_strategies/gdb.sh	/^full_command() {$/;"	f
+full_command	tmux/.config/tmux/plugins/tmux-resurrect/save_command_strategies/linux_procfs.sh	/^full_command() {$/;"	f
+full_command	tmux/.config/tmux/plugins/tmux-resurrect/save_command_strategies/pgrep.sh	/^full_command() {$/;"	f
+full_command	tmux/.config/tmux/plugins/tmux-resurrect/save_command_strategies/ps.sh	/^full_command() {$/;"	f
 g:airline#extensions#tabline#enabled	nvim/.config/nvim/plugins/config/airline.config.vim	/^ let g:airline#extensions#tabline#enabled = 1$/;"	v
 g:airline#extensions#tabline#left_alt_sep	nvim/.config/nvim/plugins/config/airline.config.vim	/^ let g:airline#extensions#tabline#left_alt_sep = ''$/;"	v
 g:airline#extensions#tabline#left_sep	nvim/.config/nvim/plugins/config/airline.config.vim	/^ let g:airline#extensions#tabline#left_sep = ''$/;"	v
@@ -159,30 +262,291 @@ g:which_key_map	nvim/.config/nvim/plugins/config/whichkey.config.vim	/^let g:whi
 g:which_key_sep	nvim/.config/nvim/plugins/config/whichkey.config.vim	/^let g:which_key_sep = '→'$/;"	v
 g:which_key_use_floating_win	nvim/.config/nvim/plugins/config/whichkey.config.vim	/^let g:which_key_use_floating_win = 0$/;"	v
 gd	nvim/.config/nvim/plugins/config/coc.config.vim	/^nmap <silent> gd <Plug>(coc-definition)$/;"	m
+get_active_window_index	tmux/.config/tmux/plugins/tmux-resurrect/scripts/save.sh	/^get_active_window_index() {$/;"	f
+get_alternate_window_index	tmux/.config/tmux/plugins/tmux-resurrect/scripts/save.sh	/^get_alternate_window_index() {$/;"	f
+get_digits_from_string	tmux/.config/tmux/plugins/tmux-resurrect/scripts/check_tmux_version.sh	/^get_digits_from_string() {$/;"	f
+get_digits_from_string	tmux/.config/tmux/plugins/tpm/scripts/check_tmux_version.sh	/^get_digits_from_string() {$/;"	f
+get_grouped_sessions	tmux/.config/tmux/plugins/tmux-resurrect/scripts/helpers.sh	/^get_grouped_sessions() {$/;"	f
+get_tmux_option	tmux/.config/tmux/plugins/tmux-resurrect/scripts/check_tmux_version.sh	/^get_tmux_option() {$/;"	f
+get_tmux_option	tmux/.config/tmux/plugins/tmux-resurrect/scripts/helpers.sh	/^get_tmux_option() {$/;"	f
+get_tmux_option	tmux/.config/tmux/plugins/tmux_nvr/scripts/common.sh	/^get_tmux_option() {$/;"	f
+get_tmux_option	tmux/.config/tmux/plugins/tpm/scripts/check_tmux_version.sh	/^get_tmux_option() {$/;"	f
+get_tmux_option	tmux/.config/tmux/plugins/tpm/tpm	/^get_tmux_option() {$/;"	f
 gi	nvim/.config/nvim/plugins/config/coc.config.vim	/^nmap <silent> gi <Plug>(coc-implementation)$/;"	m
 git_upload_ssh_key	scripts/.config/scripts/init.sh	/^function git_upload_ssh_key () {$/;"	f
+gitignore	tmux/.config/tmux/plugins/tmux-resurrect/lib/tmux-test/setup	/^gitignore() {$/;"	f
+gitignore	tmux/.config/tmux/plugins/tpm/lib/tmux-test/setup	/^gitignore() {$/;"	f
 gr	nvim/.config/nvim/plugins/config/coc.config.vim	/^nmap <silent> gr <Plug>(coc-references)$/;"	m
+grouped_sessions_format	tmux/.config/tmux/plugins/tmux-resurrect/scripts/save.sh	/^grouped_sessions_format() {$/;"	f
 gy	nvim/.config/nvim/plugins/config/coc.config.vim	/^nmap <silent> gy <Plug>(coc-type-definition)$/;"	m
 h	nvim/.config/nvim/settings/base-settings.vim	/^noremap h ;$/;"	m
+handle_session_0	tmux/.config/tmux/plugins/tmux-resurrect/scripts/restore.sh	/^handle_session_0() {$/;"	f
+has_restored_session_0	tmux/.config/tmux/plugins/tmux-resurrect/scripts/restore.sh	/^has_restored_session_0() {$/;"	f
 ic	nvim/.config/nvim/plugins/config/coc.config.vim	/^omap ic <Plug>(coc-classobj-i)$/;"	m
 if	nvim/.config/nvim/plugins/config/coc.config.vim	/^omap if <Plug>(coc-funcobj-i)$/;"	m
 info	nvim/.config/nvim/rplugin/node/todo/src/utils.js	/^  info: (msg) => {$/;"	p	class:const
 info	nvim/.config/nvim/rplugin/node/todoPlug/utils.js	/^  info: (msg) => {$/;"	p	class:const
+install_plugin	tmux/.config/tmux/plugins/tpm/scripts/install_plugins.sh	/^install_plugin() {$/;"	f
+install_plugins	tmux/.config/tmux/plugins/tpm/scripts/install_plugins.sh	/^install_plugins() {$/;"	f
+install_tmux_plugin_under_test_helper	tmux/.config/tmux/plugins/tmux-resurrect/lib/tmux-test/tests/helpers/helpers.sh	/^install_tmux_plugin_under_test_helper() {$/;"	f
+install_tmux_plugin_under_test_helper	tmux/.config/tmux/plugins/tmux-resurrect/tests/helpers/helpers.sh	/^install_tmux_plugin_under_test_helper() {$/;"	f
+install_tmux_plugin_under_test_helper	tmux/.config/tmux/plugins/tpm/lib/tmux-test/tests/helpers/helpers.sh	/^install_tmux_plugin_under_test_helper() {$/;"	f
+is_line_type	tmux/.config/tmux/plugins/tmux-resurrect/scripts/restore.sh	/^is_line_type() {$/;"	f
+is_osx	tmux/.config/tmux/plugins/tmux-sensible/sensible.tmux	/^is_osx() {$/;"	f
+is_pane_registered_as_existing	tmux/.config/tmux/plugins/tmux-resurrect/scripts/restore.sh	/^is_pane_registered_as_existing() {$/;"	f
+is_restoring_from_scratch	tmux/.config/tmux/plugins/tmux-resurrect/scripts/restore.sh	/^is_restoring_from_scratch() {$/;"	f
+is_restoring_pane_contents	tmux/.config/tmux/plugins/tmux-resurrect/scripts/restore.sh	/^is_restoring_pane_contents() {$/;"	f
+is_session_grouped	tmux/.config/tmux/plugins/tmux-resurrect/scripts/helpers.sh	/^is_session_grouped() {$/;"	f
+iterm_terminal	tmux/.config/tmux/plugins/tmux-sensible/sensible.tmux	/^iterm_terminal() {$/;"	f
 j	nvim/.config/nvim/settings/base-settings.vim	/^noremap j h$/;"	m
 jk	nvim/.config/nvim/plugins/config/easyescape.config.vim	/^cnoremap jk <ESC>$/;"	m
 k	nvim/.config/nvim/settings/base-settings.vim	/^noremap k j$/;"	m
+key_binding_not_changed	tmux/.config/tmux/plugins/tmux-sensible/sensible.tmux	/^key_binding_not_changed() {$/;"	f
+key_binding_not_set	tmux/.config/tmux/plugins/tmux-sensible/sensible.tmux	/^key_binding_not_set() {$/;"	f
 kj	nvim/.config/nvim/plugins/config/easyescape.config.vim	/^cnoremap kj <ESC>$/;"	m
 l	nvim/.config/nvim/settings/base-settings.vim	/^noremap l k$/;"	m
+last_resurrect_file	tmux/.config/tmux/plugins/tmux-resurrect/scripts/helpers.sh	/^last_resurrect_file() {$/;"	f
+last_save_file_differs_helper	tmux/.config/tmux/plugins/tmux-resurrect/tests/helpers/resurrect_helpers.sh	/^last_save_file_differs_helper() {$/;"	f
 log	scripts/.config/scripts/init.sh	/^function log() {$/;"	f
+main	tmux/.config/tmux/plugins/tmux-resurrect/lib/tmux-test/run_framework_tests	/^main() {$/;"	f
+main	tmux/.config/tmux/plugins/tmux-resurrect/lib/tmux-test/run_tests	/^main() {$/;"	f
+main	tmux/.config/tmux/plugins/tmux-resurrect/lib/tmux-test/setup	/^main() {$/;"	f
+main	tmux/.config/tmux/plugins/tmux-resurrect/lib/tmux-test/tests/run_tests_in_isolation	/^main() {$/;"	f
+main	tmux/.config/tmux/plugins/tmux-resurrect/lib/tmux-test/tests/test_tmux_scripting.sh	/^main() {$/;"	f
+main	tmux/.config/tmux/plugins/tmux-resurrect/resurrect.tmux	/^main() {$/;"	f
+main	tmux/.config/tmux/plugins/tmux-resurrect/run_tests	/^main() {$/;"	f
+main	tmux/.config/tmux/plugins/tmux-resurrect/save_command_strategies/gdb.sh	/^main() {$/;"	f
+main	tmux/.config/tmux/plugins/tmux-resurrect/save_command_strategies/linux_procfs.sh	/^main() {$/;"	f
+main	tmux/.config/tmux/plugins/tmux-resurrect/save_command_strategies/pgrep.sh	/^main() {$/;"	f
+main	tmux/.config/tmux/plugins/tmux-resurrect/save_command_strategies/ps.sh	/^main() {$/;"	f
+main	tmux/.config/tmux/plugins/tmux-resurrect/scripts/check_tmux_version.sh	/^main() {$/;"	f
+main	tmux/.config/tmux/plugins/tmux-resurrect/scripts/restore.sh	/^main() {$/;"	f
+main	tmux/.config/tmux/plugins/tmux-resurrect/scripts/save.sh	/^main() {$/;"	f
+main	tmux/.config/tmux/plugins/tmux-resurrect/scripts/tmux_spinner.sh	/^main() {$/;"	f
+main	tmux/.config/tmux/plugins/tmux-resurrect/strategies/irb_default_strategy.sh	/^main() {$/;"	f
+main	tmux/.config/tmux/plugins/tmux-resurrect/strategies/mosh-client_default_strategy.sh	/^main() {$/;"	f
+main	tmux/.config/tmux/plugins/tmux-resurrect/strategies/nvim_session.sh	/^main() {$/;"	f
+main	tmux/.config/tmux/plugins/tmux-resurrect/strategies/vim_session.sh	/^main() {$/;"	f
+main	tmux/.config/tmux/plugins/tmux-resurrect/tests/run_tests_in_isolation	/^main() {$/;"	f
+main	tmux/.config/tmux/plugins/tmux-resurrect/tests/test_resurrect_restore.sh	/^main() {$/;"	f
+main	tmux/.config/tmux/plugins/tmux-resurrect/tests/test_resurrect_save.sh	/^main() {$/;"	f
+main	tmux/.config/tmux/plugins/tmux-sensible/sensible.tmux	/^main() {$/;"	f
+main	tmux/.config/tmux/plugins/tmux_nvr/scripts/new_session.sh	/^main() {$/;"	f
+main	tmux/.config/tmux/plugins/tmux_nvr/scripts/new_session_prompt.sh	/^main() {$/;"	f
+main	tmux/.config/tmux/plugins/tmux_nvr/scripts/new_window.sh	/^main() {$/;"	f
+main	tmux/.config/tmux/plugins/tmux_nvr/scripts/split.sh	/^main() {$/;"	f
+main	tmux/.config/tmux/plugins/tmux_nvr/tmux_nvr.tmux	/^main() {$/;"	f
+main	tmux/.config/tmux/plugins/tpm/bin/clean_plugins	/^main() {$/;"	f
+main	tmux/.config/tmux/plugins/tpm/bin/install_plugins	/^main() {$/;"	f
+main	tmux/.config/tmux/plugins/tpm/bin/update_plugins	/^main() {$/;"	f
+main	tmux/.config/tmux/plugins/tpm/bindings/clean_plugins	/^main() {$/;"	f
+main	tmux/.config/tmux/plugins/tpm/bindings/install_plugins	/^main() {$/;"	f
+main	tmux/.config/tmux/plugins/tpm/bindings/update_plugins	/^main() {$/;"	f
+main	tmux/.config/tmux/plugins/tpm/lib/tmux-test/run_framework_tests	/^main() {$/;"	f
+main	tmux/.config/tmux/plugins/tpm/lib/tmux-test/run_tests	/^main() {$/;"	f
+main	tmux/.config/tmux/plugins/tpm/lib/tmux-test/setup	/^main() {$/;"	f
+main	tmux/.config/tmux/plugins/tpm/lib/tmux-test/tests/run_tests_in_isolation	/^main() {$/;"	f
+main	tmux/.config/tmux/plugins/tpm/lib/tmux-test/tests/test_tmux_scripting.sh	/^main() {$/;"	f
+main	tmux/.config/tmux/plugins/tpm/scripts/check_tmux_version.sh	/^main() {$/;"	f
+main	tmux/.config/tmux/plugins/tpm/scripts/clean_plugins.sh	/^main() {$/;"	f
+main	tmux/.config/tmux/plugins/tpm/scripts/install_plugins.sh	/^main() {$/;"	f
+main	tmux/.config/tmux/plugins/tpm/scripts/source_plugins.sh	/^main() {$/;"	f
+main	tmux/.config/tmux/plugins/tpm/scripts/update_plugin.sh	/^main() {$/;"	f
+main	tmux/.config/tmux/plugins/tpm/scripts/update_plugin_prompt_handler.sh	/^main() {$/;"	f
+main	tmux/.config/tmux/plugins/tpm/tpm	/^main() {$/;"	f
 manageEditorSize	nvim/.config/nvim/settings/vscode-settings.vim	/^function! s:manageEditorSize(...)$/;"	f
+manually_install_the_plugin	tmux/.config/tmux/plugins/tpm/tests/test_plugin_clean.sh	/^manually_install_the_plugin() {$/;"	f
+manually_install_the_plugin	tmux/.config/tmux/plugins/tpm/tests/test_plugin_update.sh	/^manually_install_the_plugin() {$/;"	f
 mapleader	nvim/.config/nvim/settings/neovim-settings.vim	/^let mapleader=" "$/;"	v
+mosh_command	tmux/.config/tmux/plugins/tmux-resurrect/strategies/mosh-client_default_strategy.sh	/^mosh_command() {$/;"	f
+never_ever_overwrite	tmux/.config/tmux/plugins/tmux-resurrect/scripts/restore.sh	/^never_ever_overwrite() {$/;"	f
+new_pane	tmux/.config/tmux/plugins/tmux-resurrect/scripts/restore.sh	/^new_pane() {$/;"	f
+new_session	tmux/.config/tmux/plugins/tmux-resurrect/scripts/restore.sh	/^new_session() {$/;"	f
+new_session	tmux/.config/tmux/plugins/tmux_nvr/scripts/new_session.sh	/^new_session() {$/;"	f
+new_window	tmux/.config/tmux/plugins/tmux-resurrect/scripts/restore.sh	/^new_window() {$/;"	f
+new_window	tmux/.config/tmux/plugins/tmux_nvr/scripts/new_window.sh	/^new_window() {$/;"	f
+next_nvimsocket_filename	tmux/.config/tmux/plugins/tmux_nvr/scripts/common.sh	/^next_nvimsocket_filename() {$/;"	f
+number_nonempty_lines_on_screen	tmux/.config/tmux/plugins/tmux-resurrect/scripts/save.sh	/^number_nonempty_lines_on_screen() {$/;"	f
+number_of_windows	tmux/.config/tmux/plugins/tmux-resurrect/lib/tmux-test/tests/test_tmux_scripting.sh	/^number_of_windows() {$/;"	f
+number_of_windows	tmux/.config/tmux/plugins/tpm/lib/tmux-test/tests/test_tmux_scripting.sh	/^number_of_windows() {$/;"	f
+nvim_session_file_exists	tmux/.config/tmux/plugins/tmux-resurrect/strategies/nvim_session.sh	/^nvim_session_file_exists() {$/;"	f
 openTodoFile	nvim/.config/nvim/rplugin/node/todo/src/index.js	/^  function openTodoFile(plugin) {$/;"	f	function:function
+option_value_not_changed	tmux/.config/tmux/plugins/tmux-sensible/sensible.tmux	/^option_value_not_changed() {$/;"	f
+original_command_contains_session_flag	tmux/.config/tmux/plugins/tmux-resurrect/strategies/nvim_session.sh	/^original_command_contains_session_flag() {$/;"	f
+original_command_wo_junk_vars	tmux/.config/tmux/plugins/tmux-resurrect/strategies/irb_default_strategy.sh	/^original_command_wo_junk_vars() {$/;"	f
+pane_content_files_restore_from_archive	tmux/.config/tmux/plugins/tmux-resurrect/scripts/helpers.sh	/^pane_content_files_restore_from_archive() {$/;"	f
+pane_contents_archive_file	tmux/.config/tmux/plugins/tmux-resurrect/scripts/helpers.sh	/^pane_contents_archive_file() {$/;"	f
+pane_contents_create_archive	tmux/.config/tmux/plugins/tmux-resurrect/scripts/helpers.sh	/^pane_contents_create_archive() {$/;"	f
+pane_contents_dir	tmux/.config/tmux/plugins/tmux-resurrect/scripts/helpers.sh	/^pane_contents_dir() {$/;"	f
+pane_contents_file	tmux/.config/tmux/plugins/tmux-resurrect/scripts/helpers.sh	/^pane_contents_file() {$/;"	f
+pane_contents_file_exists	tmux/.config/tmux/plugins/tmux-resurrect/scripts/helpers.sh	/^pane_contents_file_exists() {$/;"	f
+pane_creation_command	tmux/.config/tmux/plugins/tmux-resurrect/scripts/restore.sh	/^pane_creation_command() {$/;"	f
+pane_exists	tmux/.config/tmux/plugins/tmux-resurrect/scripts/restore.sh	/^pane_exists() {$/;"	f
+pane_format	tmux/.config/tmux/plugins/tmux-resurrect/scripts/save.sh	/^pane_format() {$/;"	f
+pane_full_command	tmux/.config/tmux/plugins/tmux-resurrect/scripts/save.sh	/^pane_full_command() {$/;"	f
+pane_has_any_content	tmux/.config/tmux/plugins/tmux-resurrect/scripts/save.sh	/^pane_has_any_content() {$/;"	f
+parse_arguments	tmux/.config/tmux/plugins/tmux-resurrect/lib/tmux-test/run_tests	/^parse_arguments() {$/;"	f
+parse_arguments	tmux/.config/tmux/plugins/tmux-resurrect/run_tests	/^parse_arguments() {$/;"	f
+parse_arguments	tmux/.config/tmux/plugins/tpm/lib/tmux-test/run_tests	/^parse_arguments() {$/;"	f
+plugin_already_installed	tmux/.config/tmux/plugins/tpm/scripts/helpers/plugin_functions.sh	/^plugin_already_installed() {$/;"	f
+plugin_dir_exists	tmux/.config/tmux/plugins/tpm/scripts/source_plugins.sh	/^plugin_dir_exists() {$/;"	f
+plugin_name_helper	tmux/.config/tmux/plugins/tpm/scripts/helpers/plugin_functions.sh	/^plugin_name_helper() {$/;"	f
+plugin_path_helper	tmux/.config/tmux/plugins/tpm/scripts/helpers/plugin_functions.sh	/^plugin_path_helper() {$/;"	f
+prefix	tmux/.config/tmux/plugins/tmux-sensible/sensible.tmux	/^prefix() {$/;"	f
+prefix_without_ctrl	tmux/.config/tmux/plugins/tmux-sensible/sensible.tmux	/^prefix_without_ctrl() {$/;"	f
 projects	scripts/.config/scripts/project_launcher	/^projects() {$/;"	f
+pull_changes	tmux/.config/tmux/plugins/tpm/scripts/update_plugin.sh	/^pull_changes() {$/;"	f
+random	tmux/.config/tmux/plugins/tmux_nvr/scripts/common.sh	/^random() {$/;"	f
+register_existing_pane	tmux/.config/tmux/plugins/tmux-resurrect/scripts/restore.sh	/^register_existing_pane() {$/;"	f
+register_failing_tests	tmux/.config/tmux/plugins/tmux-resurrect/lib/tmux-test/run_tests	/^register_failing_tests() {$/;"	f
+register_failing_tests	tmux/.config/tmux/plugins/tmux-resurrect/run_tests	/^register_failing_tests() {$/;"	f
+register_failing_tests	tmux/.config/tmux/plugins/tpm/lib/tmux-test/run_tests	/^register_failing_tests() {$/;"	f
+reload_tmux_environment	tmux/.config/tmux/plugins/tpm/scripts/helpers/tmux_utils.sh	/^reload_tmux_environment() {$/;"	f
+remove_first_char	tmux/.config/tmux/plugins/tmux-resurrect/scripts/helpers.sh	/^remove_first_char() {$/;"	f
+remove_from_gitignore	tmux/.config/tmux/plugins/tmux-resurrect/lib/tmux-test/setup	/^remove_from_gitignore() {$/;"	f
+remove_from_gitignore	tmux/.config/tmux/plugins/tpm/lib/tmux-test/setup	/^remove_from_gitignore() {$/;"	f
+remove_old_backups	tmux/.config/tmux/plugins/tmux-resurrect/scripts/save.sh	/^remove_old_backups() {$/;"	f
+restore	tmux/.config/tmux/plugins/tmux-resurrect/lib/tmux-test/setup	/^restore() {$/;"	f
+restore	tmux/.config/tmux/plugins/tpm/lib/tmux-test/setup	/^restore() {$/;"	f
+restore_active_and_alternate_sessions	tmux/.config/tmux/plugins/tmux-resurrect/scripts/restore.sh	/^restore_active_and_alternate_sessions() {$/;"	f
+restore_active_and_alternate_windows	tmux/.config/tmux/plugins/tmux-resurrect/scripts/restore.sh	/^restore_active_and_alternate_windows() {$/;"	f
+restore_active_and_alternate_windows_for_grouped_sessions	tmux/.config/tmux/plugins/tmux-resurrect/scripts/restore.sh	/^restore_active_and_alternate_windows_for_grouped_sessions() {$/;"	f
+restore_active_pane_for_each_window	tmux/.config/tmux/plugins/tmux-resurrect/scripts/restore.sh	/^restore_active_pane_for_each_window() {$/;"	f
+restore_all_pane_processes	tmux/.config/tmux/plugins/tmux-resurrect/scripts/restore.sh	/^restore_all_pane_processes() {$/;"	f
+restore_all_panes	tmux/.config/tmux/plugins/tmux-resurrect/scripts/restore.sh	/^restore_all_panes() {$/;"	f
+restore_from_scratch_true	tmux/.config/tmux/plugins/tmux-resurrect/scripts/restore.sh	/^restore_from_scratch_true() {$/;"	f
+restore_grouped_session	tmux/.config/tmux/plugins/tmux-resurrect/scripts/restore.sh	/^restore_grouped_session() {$/;"	f
+restore_grouped_sessions	tmux/.config/tmux/plugins/tmux-resurrect/scripts/restore.sh	/^restore_grouped_sessions() {$/;"	f
+restore_pane	tmux/.config/tmux/plugins/tmux-resurrect/scripts/restore.sh	/^restore_pane() {$/;"	f
+restore_pane_contents_true	tmux/.config/tmux/plugins/tmux-resurrect/scripts/restore.sh	/^restore_pane_contents_true() {$/;"	f
+restore_pane_layout_for_each_window	tmux/.config/tmux/plugins/tmux-resurrect/scripts/restore.sh	/^restore_pane_layout_for_each_window() {$/;"	f
+restore_pane_process	tmux/.config/tmux/plugins/tmux-resurrect/scripts/process_restore_helpers.sh	/^restore_pane_process() {$/;"	f
+restore_pane_processes_enabled	tmux/.config/tmux/plugins/tmux-resurrect/scripts/process_restore_helpers.sh	/^restore_pane_processes_enabled() {$/;"	f
+restore_shell_history	tmux/.config/tmux/plugins/tmux-resurrect/scripts/restore.sh	/^restore_shell_history() {$/;"	f
+restore_state	tmux/.config/tmux/plugins/tmux-resurrect/scripts/restore.sh	/^restore_state() {$/;"	f
+restore_tmux_environment_and_save_again	tmux/.config/tmux/plugins/tmux-resurrect/tests/test_resurrect_restore.sh	/^restore_tmux_environment_and_save_again() {$/;"	f
+restore_zoomed_windows	tmux/.config/tmux/plugins/tmux-resurrect/scripts/restore.sh	/^restore_zoomed_windows() {$/;"	f
+restored_session_0_true	tmux/.config/tmux/plugins/tmux-resurrect/scripts/restore.sh	/^restored_session_0_true() {$/;"	f
+resurrect_dir	tmux/.config/tmux/plugins/tmux-resurrect/scripts/helpers.sh	/^resurrect_dir() {$/;"	f
+resurrect_file_path	tmux/.config/tmux/plugins/tmux-resurrect/scripts/helpers.sh	/^resurrect_file_path() {$/;"	f
+resurrect_history_file	tmux/.config/tmux/plugins/tmux-resurrect/scripts/helpers.sh	/^resurrect_history_file() {$/;"	f
+run_tests	tmux/.config/tmux/plugins/tmux-resurrect/lib/tmux-test/run_tests	/^run_tests() {$/;"	f
+run_tests	tmux/.config/tmux/plugins/tmux-resurrect/lib/tmux-test/tests/helpers/helpers.sh	/^run_tests() {$/;"	f
+run_tests	tmux/.config/tmux/plugins/tmux-resurrect/lib/tmux-test/tests/run_tests_in_isolation	/^run_tests() {$/;"	f
+run_tests	tmux/.config/tmux/plugins/tmux-resurrect/run_tests	/^run_tests() {$/;"	f
+run_tests	tmux/.config/tmux/plugins/tmux-resurrect/tests/helpers/helpers.sh	/^run_tests() {$/;"	f
+run_tests	tmux/.config/tmux/plugins/tmux-resurrect/tests/run_tests_in_isolation	/^run_tests() {$/;"	f
+run_tests	tmux/.config/tmux/plugins/tpm/lib/tmux-test/run_tests	/^run_tests() {$/;"	f
+run_tests	tmux/.config/tmux/plugins/tpm/lib/tmux-test/tests/helpers/helpers.sh	/^run_tests() {$/;"	f
+run_tests	tmux/.config/tmux/plugins/tpm/lib/tmux-test/tests/run_tests_in_isolation	/^run_tests() {$/;"	f
+run_tests_on_virtual_machines	tmux/.config/tmux/plugins/tmux-resurrect/lib/tmux-test/run_tests	/^run_tests_on_virtual_machines() {$/;"	f
+run_tests_on_virtual_machines	tmux/.config/tmux/plugins/tmux-resurrect/run_tests	/^run_tests_on_virtual_machines() {$/;"	f
+run_tests_on_virtual_machines	tmux/.config/tmux/plugins/tpm/lib/tmux-test/run_tests	/^run_tests_on_virtual_machines() {$/;"	f
+run_tests_on_vm	tmux/.config/tmux/plugins/tmux-resurrect/lib/tmux-test/run_tests	/^run_tests_on_vm() {$/;"	f
+run_tests_on_vm	tmux/.config/tmux/plugins/tmux-resurrect/run_tests	/^run_tests_on_vm() {$/;"	f
+run_tests_on_vm	tmux/.config/tmux/plugins/tpm/lib/tmux-test/run_tests	/^run_tests_on_vm() {$/;"	f
+run_vagrant	tmux/.config/tmux/plugins/tmux-resurrect/lib/tmux-test/run_tests	/^run_vagrant() {$/;"	f
+run_vagrant	tmux/.config/tmux/plugins/tmux-resurrect/run_tests	/^run_vagrant() {$/;"	f
+run_vagrant	tmux/.config/tmux/plugins/tpm/lib/tmux-test/run_tests	/^run_vagrant() {$/;"	f
+save_all	tmux/.config/tmux/plugins/tmux-resurrect/scripts/save.sh	/^save_all() {$/;"	f
+save_shell_history	tmux/.config/tmux/plugins/tmux-resurrect/scripts/save.sh	/^save_shell_history() {$/;"	f
+save_shell_history_option_on	tmux/.config/tmux/plugins/tmux-resurrect/scripts/helpers.sh	/^save_shell_history_option_on() {$/;"	f
+script_run_helper	tmux/.config/tmux/plugins/tpm/tests/helpers/tpm.sh	/^script_run_helper() {$/;"	f
+server_option_value_not_changed	tmux/.config/tmux/plugins/tmux-sensible/sensible.tmux	/^server_option_value_not_changed() {$/;"	f
+session_exists	tmux/.config/tmux/plugins/tmux-resurrect/scripts/restore.sh	/^session_exists() {$/;"	f
+session_exists_exact	tmux/.config/tmux/plugins/tmux_nvr/scripts/common.sh	/^session_exists_exact() {$/;"	f
+session_name_not_provided	tmux/.config/tmux/plugins/tmux_nvr/scripts/new_session.sh	/^session_name_not_provided() {$/;"	f
 setLine	nvim/.config/nvim/rplugin/node/todo/src/index.js	/^  function setLine(plugin) {$/;"	f	function:function
 setLine	nvim/.config/nvim/rplugin/node/todoPlug/index.js	/^  function setLine() {$/;"	f	function:function
+set_default_strategies	tmux/.config/tmux/plugins/tmux-resurrect/resurrect.tmux	/^set_default_strategies() {$/;"	f
+set_default_tpm_path	tmux/.config/tmux/plugins/tpm/tpm	/^set_default_tpm_path() {$/;"	f
+set_exit_val_to_false	tmux/.config/tmux/plugins/tmux-resurrect/lib/tmux-test/tests/run_tests_in_isolation	/^set_exit_val_to_false() {$/;"	f
+set_exit_val_to_false	tmux/.config/tmux/plugins/tmux-resurrect/tests/run_tests_in_isolation	/^set_exit_val_to_false() {$/;"	f
+set_exit_val_to_false	tmux/.config/tmux/plugins/tpm/lib/tmux-test/tests/run_tests_in_isolation	/^set_exit_val_to_false() {$/;"	f
+set_new_session_binding	tmux/.config/tmux/plugins/tmux_nvr/tmux_nvr.tmux	/^set_new_session_binding() {$/;"	f
+set_new_window_binding	tmux/.config/tmux/plugins/tmux_nvr/tmux_nvr.tmux	/^set_new_window_binding() {$/;"	f
+set_pane_split_bindings	tmux/.config/tmux/plugins/tmux_nvr/tmux_nvr.tmux	/^set_pane_split_bindings() {$/;"	f
+set_restore_bindings	tmux/.config/tmux/plugins/tmux-resurrect/resurrect.tmux	/^set_restore_bindings() {$/;"	f
+set_save_bindings	tmux/.config/tmux/plugins/tmux-resurrect/resurrect.tmux	/^set_save_bindings() {$/;"	f
+set_screen_dimensions_helper	tmux/.config/tmux/plugins/tmux-resurrect/tests/helpers/resurrect_helpers.sh	/^set_screen_dimensions_helper() {$/;"	f
+set_script_path_options	tmux/.config/tmux/plugins/tmux-resurrect/resurrect.tmux	/^set_script_path_options() {$/;"	f
+set_tmux_conf_helper	tmux/.config/tmux/plugins/tmux-resurrect/lib/tmux-test/tests/helpers/helpers.sh	/^set_tmux_conf_helper() {$/;"	f
+set_tmux_conf_helper	tmux/.config/tmux/plugins/tmux-resurrect/tests/helpers/helpers.sh	/^set_tmux_conf_helper() {$/;"	f
+set_tmux_conf_helper	tmux/.config/tmux/plugins/tpm/lib/tmux-test/tests/helpers/helpers.sh	/^set_tmux_conf_helper() {$/;"	f
+set_tpm_key_bindings	tmux/.config/tmux/plugins/tpm/tpm	/^set_tpm_key_bindings() {$/;"	f
+set_tpm_path	tmux/.config/tmux/plugins/tpm/tpm	/^set_tpm_path() {$/;"	f
+setup_before_restore	tmux/.config/tmux/plugins/tmux-resurrect/tests/test_resurrect_restore.sh	/^setup_before_restore() {$/;"	f
 show_documentation	nvim/.config/nvim/plugins/config/coc.config.vim	/^function! s:show_documentation()$/;"	f
+show_output	tmux/.config/tmux/plugins/tmux-resurrect/scripts/save.sh	/^show_output() {$/;"	f
+silently_source_all_tmux_files	tmux/.config/tmux/plugins/tpm/scripts/source_plugins.sh	/^silently_source_all_tmux_files() {$/;"	f
+source_plugins	tmux/.config/tmux/plugins/tpm/scripts/source_plugins.sh	/^source_plugins() {$/;"	f
+source_plugins	tmux/.config/tmux/plugins/tpm/tpm	/^source_plugins() {$/;"	f
 split	nvim/.config/nvim/settings/vscode-settings.vim	/^function! s:split(...) abort$/;"	f
 splitNew	nvim/.config/nvim/settings/vscode-settings.vim	/^function! s:splitNew(...)$/;"	f
+start_spinner	tmux/.config/tmux/plugins/tmux-resurrect/scripts/spinner_helpers.sh	/^start_spinner() {$/;"	f
+state_format	tmux/.config/tmux/plugins/tmux-resurrect/scripts/save.sh	/^state_format() {$/;"	f
+stop_spinner	tmux/.config/tmux/plugins/tmux-resurrect/scripts/spinner_helpers.sh	/^stop_spinner() {$/;"	f
+stop_vagrant	tmux/.config/tmux/plugins/tmux-resurrect/lib/tmux-test/run_tests	/^stop_vagrant() {$/;"	f
+stop_vagrant	tmux/.config/tmux/plugins/tmux-resurrect/run_tests	/^stop_vagrant() {$/;"	f
+stop_vagrant	tmux/.config/tmux/plugins/tpm/lib/tmux-test/run_tests	/^stop_vagrant() {$/;"	f
 store	nvim/.config/nvim/rplugin/node/todo/src/utils.js	/^  store: (data, path) => {$/;"	p	class:const
 store	nvim/.config/nvim/rplugin/node/todoPlug/utils.js	/^  store: (data, path) => {$/;"	p	class:const
+supported_tmux_version_ok	tmux/.config/tmux/plugins/tmux-resurrect/scripts/helpers.sh	/^supported_tmux_version_ok() {$/;"	f
+supported_tmux_version_ok	tmux/.config/tmux/plugins/tpm/tpm	/^supported_tmux_version_ok() {$/;"	f
+switch_to_session	tmux/.config/tmux/plugins/tmux_nvr/scripts/common.sh	/^switch_to_session() {$/;"	f
+symlink_internal_test_runner	tmux/.config/tmux/plugins/tmux-resurrect/lib/tmux-test/setup	/^symlink_internal_test_runner() {$/;"	f
+symlink_internal_test_runner	tmux/.config/tmux/plugins/tpm/lib/tmux-test/setup	/^symlink_internal_test_runner() {$/;"	f
+symlink_test_helpers	tmux/.config/tmux/plugins/tmux-resurrect/lib/tmux-test/setup	/^symlink_test_helpers() {$/;"	f
+symlink_test_helpers	tmux/.config/tmux/plugins/tpm/lib/tmux-test/setup	/^symlink_test_helpers() {$/;"	f
+symlink_user_test_runner	tmux/.config/tmux/plugins/tmux-resurrect/lib/tmux-test/setup	/^symlink_user_test_runner() {$/;"	f
+symlink_user_test_runner	tmux/.config/tmux/plugins/tpm/lib/tmux-test/setup	/^symlink_user_test_runner() {$/;"	f
+teardown_helper	tmux/.config/tmux/plugins/tmux-resurrect/lib/tmux-test/tests/helpers/helpers.sh	/^teardown_helper() {$/;"	f
+teardown_helper	tmux/.config/tmux/plugins/tmux-resurrect/tests/helpers/helpers.sh	/^teardown_helper() {$/;"	f
+teardown_helper	tmux/.config/tmux/plugins/tpm/lib/tmux-test/tests/helpers/helpers.sh	/^teardown_helper() {$/;"	f
+test_custom_tpm_path	tmux/.config/tmux/plugins/tpm/tests/test_plugin_sourcing.sh	/^test_custom_tpm_path() {$/;"	f
+test_default_tpm_path	tmux/.config/tmux/plugins/tpm/tests/test_plugin_sourcing.sh	/^test_default_tpm_path() {$/;"	f
+test_legacy_and_new_syntax_for_plugin_installation_work_via_script	tmux/.config/tmux/plugins/tpm/tests/test_plugin_installation_legacy.sh	/^test_legacy_and_new_syntax_for_plugin_installation_work_via_script() {$/;"	f
+test_legacy_and_new_syntax_for_plugin_installation_work_via_tmux_key_binding	tmux/.config/tmux/plugins/tpm/tests/test_plugin_installation_legacy.sh	/^test_legacy_and_new_syntax_for_plugin_installation_work_via_tmux_key_binding() {$/;"	f
+test_multiple_plugins_installation_via_script	tmux/.config/tmux/plugins/tpm/tests/test_plugin_installation.sh	/^test_multiple_plugins_installation_via_script() {$/;"	f
+test_multiple_plugins_installation_via_tmux_key_binding	tmux/.config/tmux/plugins/tpm/tests/test_plugin_installation.sh	/^test_multiple_plugins_installation_via_tmux_key_binding() {$/;"	f
+test_non_existing_plugin_installation_via_script	tmux/.config/tmux/plugins/tpm/tests/test_plugin_installation.sh	/^test_non_existing_plugin_installation_via_script() {$/;"	f
+test_non_existing_plugin_installation_via_tmux_key_binding	tmux/.config/tmux/plugins/tpm/tests/test_plugin_installation.sh	/^test_non_existing_plugin_installation_via_tmux_key_binding() {$/;"	f
+test_plugin_installation_custom_dir_via_script	tmux/.config/tmux/plugins/tpm/tests/test_plugin_installation.sh	/^test_plugin_installation_custom_dir_via_script() {$/;"	f
+test_plugin_installation_custom_dir_via_tmux_key_binding	tmux/.config/tmux/plugins/tpm/tests/test_plugin_installation.sh	/^test_plugin_installation_custom_dir_via_tmux_key_binding() {$/;"	f
+test_plugin_installation_via_script	tmux/.config/tmux/plugins/tpm/tests/test_plugin_installation.sh	/^test_plugin_installation_via_script() {$/;"	f
+test_plugin_installation_via_script	tmux/.config/tmux/plugins/tpm/tests/test_plugin_installation_legacy.sh	/^test_plugin_installation_via_script() {$/;"	f
+test_plugin_installation_via_tmux_key_binding	tmux/.config/tmux/plugins/tpm/tests/test_plugin_installation.sh	/^test_plugin_installation_via_tmux_key_binding() {$/;"	f
+test_plugin_installation_via_tmux_key_binding	tmux/.config/tmux/plugins/tpm/tests/test_plugin_installation_legacy.sh	/^test_plugin_installation_via_tmux_key_binding() {$/;"	f
+test_plugin_installation_via_tmux_key_binding_set_option	tmux/.config/tmux/plugins/tpm/tests/test_plugin_installation.sh	/^test_plugin_installation_via_tmux_key_binding_set_option() {$/;"	f
+test_plugin_sourcing	tmux/.config/tmux/plugins/tpm/tests/test_plugin_sourcing.sh	/^test_plugin_sourcing() {$/;"	f
+test_plugin_uninstallation_via_script	tmux/.config/tmux/plugins/tpm/tests/test_plugin_clean.sh	/^test_plugin_uninstallation_via_script() {$/;"	f
+test_plugin_uninstallation_via_tmux_key_binding	tmux/.config/tmux/plugins/tpm/tests/test_plugin_clean.sh	/^test_plugin_uninstallation_via_tmux_key_binding() {$/;"	f
+test_plugin_update_via_script	tmux/.config/tmux/plugins/tpm/tests/test_plugin_update.sh	/^test_plugin_update_via_script() {$/;"	f
+test_plugin_update_via_tmux_key_binding	tmux/.config/tmux/plugins/tpm/tests/test_plugin_update.sh	/^test_plugin_update_via_tmux_key_binding() {$/;"	f
+test_plugins_installation_from_multiple_sourced_files_via_script	tmux/.config/tmux/plugins/tpm/tests/test_plugin_installation.sh	/^test_plugins_installation_from_multiple_sourced_files_via_script() {$/;"	f
+test_plugins_installation_from_multiple_sourced_files_via_tmux_key_binding	tmux/.config/tmux/plugins/tpm/tests/test_plugin_installation.sh	/^test_plugins_installation_from_multiple_sourced_files_via_tmux_key_binding() {$/;"	f
+test_plugins_installation_from_sourced_file_via_script	tmux/.config/tmux/plugins/tpm/tests/test_plugin_installation.sh	/^test_plugins_installation_from_sourced_file_via_script() {$/;"	f
+test_plugins_installation_from_sourced_file_via_tmux_key_binding	tmux/.config/tmux/plugins/tpm/tests/test_plugin_installation.sh	/^test_plugins_installation_from_sourced_file_via_tmux_key_binding() {$/;"	f
+test_unsuccessful_plugin_uninstallation_via_script	tmux/.config/tmux/plugins/tpm/tests/test_plugin_clean.sh	/^test_unsuccessful_plugin_uninstallation_via_script() {$/;"	f
+tmux_default_command	tmux/.config/tmux/plugins/tmux-resurrect/scripts/restore.sh	/^tmux_default_command() {$/;"	f
+tmux_echo	tmux/.config/tmux/plugins/tpm/scripts/helpers/tmux_echo_functions.sh	/^tmux_echo() {$/;"	f
+tmux_socket	tmux/.config/tmux/plugins/tmux-resurrect/scripts/restore.sh	/^tmux_socket() {$/;"	f
+tmux_version_int	tmux/.config/tmux/plugins/tmux-resurrect/scripts/check_tmux_version.sh	/^tmux_version_int() {$/;"	f
+tmux_version_int	tmux/.config/tmux/plugins/tpm/scripts/check_tmux_version.sh	/^tmux_version_int() {$/;"	f
+toggle_window_zoom	tmux/.config/tmux/plugins/tmux-resurrect/scripts/save.sh	/^toggle_window_zoom() {$/;"	f
+tpm_path	tmux/.config/tmux/plugins/tpm/scripts/helpers/plugin_functions.sh	/^tpm_path() {$/;"	f
+tpm_path_set	tmux/.config/tmux/plugins/tpm/tpm	/^tpm_path_set() {$/;"	f
+tpm_plugins_list_helper	tmux/.config/tmux/plugins/tpm/scripts/helpers/plugin_functions.sh	/^tpm_plugins_list_helper() {$/;"	f
+undo	tmux/.config/tmux/plugins/tmux-resurrect/lib/tmux-test/setup	/^undo() {$/;"	f
+undo	tmux/.config/tmux/plugins/tpm/lib/tmux-test/setup	/^undo() {$/;"	f
+unsupported_version_message	tmux/.config/tmux/plugins/tmux-resurrect/scripts/check_tmux_version.sh	/^unsupported_version_message() {$/;"	f
+unsupported_version_message	tmux/.config/tmux/plugins/tpm/scripts/check_tmux_version.sh	/^unsupported_version_message() {$/;"	f
+update	tmux/.config/tmux/plugins/tpm/scripts/update_plugin.sh	/^update() {$/;"	f
+update_all	tmux/.config/tmux/plugins/tpm/scripts/update_plugin.sh	/^update_all() {$/;"	f
+update_plugin_prompt	tmux/.config/tmux/plugins/tpm/bindings/update_plugins	/^update_plugin_prompt() {$/;"	f
+update_plugins	tmux/.config/tmux/plugins/tpm/scripts/update_plugin.sh	/^update_plugins() {$/;"	f
 v	nvim/.config/nvim/settings/vscode-settings.vim	/^nnoremap <silent> <script> v v<SID>SetCursorLineNrColorVisual$/;"	m
+verify_tpm_path_permissions	tmux/.config/tmux/plugins/tpm/scripts/install_plugins.sh	/^verify_tpm_path_permissions() {$/;"	f
+vim_session_file_exists	tmux/.config/tmux/plugins/tmux-resurrect/strategies/vim_session.sh	/^vim_session_file_exists() {$/;"	f
+window_exists	tmux/.config/tmux/plugins/tmux-resurrect/scripts/restore.sh	/^window_exists() {$/;"	f
+window_format	tmux/.config/tmux/plugins/tmux-resurrect/scripts/save.sh	/^window_format() {$/;"	f

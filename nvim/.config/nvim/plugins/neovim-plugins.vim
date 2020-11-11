@@ -28,6 +28,8 @@ call plug#begin('~/.vim/plugged')
 	Plug 'zhou13/vim-easyescape'
 	Plug 'tpope/vim-surround'
   Plug 'ludovicchabant/vim-gutentags'
+  Plug 'airblade/vim-rooter'
+  Plug 'ThePrimeagen/vim-be-good'
 
 " Initialize plugin system
 call plug#end()
@@ -48,4 +50,3 @@ source $HOME/.config/nvim/plugins/config/signify.config.vim
 source $HOME/.config/nvim/plugins/config/easyescape.config.vim
 
 
-source $HOME/.config/nvim/plugins/config/terminal.config.vim

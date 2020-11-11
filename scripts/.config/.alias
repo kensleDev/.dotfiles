@@ -1,10 +1,13 @@
-CURRENT_USER=$(whoami)
-if [ -n "${NVIM_LISTEN_ADDRESS+x}" ]; then
-  alias h='nvr -o'
-  alias v='nvr -O'
-  alias t='nvr --remote-tab'
-fi
+# Nvim Remote
+alias nr='nvr --servername /tmp/nvimsocket --remote'
+alias nrs='nvr --servername /tmp/nvimsocket --remote-send'
+alias nre='nvr --servername /tmp/nvimsocket --remote-expr'
+alias h='nvr --servername /tmp/vimsocket -o'
+alias v='nvr --servername /tmp/vimsocket -O'
+alias t='nvr --servername /tmp/vimsocket --remote-tab'
 
+
+CURRENT_USER=$(whoami)
 alias=keys="sh /home/kd/.config/keyboard/keyboard_disable"
 
 alias icat="kitty +kitten icat"
@@ -46,17 +49,12 @@ function git_upload_ssh_key () {
 
 
 function vim() {
-  NVIM_LISTEN_ADDRESS=/tmp/nvimsocket /home/$CURRENT_USER/.config/nvim/nvim.appimage $1
+  NVIM_LISTEN_ADDRESS=/tmp/nvimsocket nvim $1
 }
 
-function nvim() {
-  NVIM_LISTEN_ADDRESS=/tmp/nvimsocket /home/$CURRENT_USER/.config/nvim/nvim.appimage $1
+function vimd() {
+  nvim --cmd "set rtp+=$(pwd)" .
 }
-
-function v() {
-  NVIM_LISTEN_ADDRESS=/tmp/nvimsocket /home/$CURRENT_USER/.config/nvim/nvim.appimage $1
-}
-
 
 #------------------------------------------------- SHARED
 alias s='sudo'
@@ -91,11 +89,11 @@ alias lhh='ls -d .?* '
 alias lh='ls -ld .?* '
 
 function Del() {
-  sudo mv $1 ~/.trash
+  sudo trash $1
 }
 
 function del() {
-  mv $1 ~/.trash
+  trash $1
 }
 
 alias es='sudo chmod u+x'

@@ -3,7 +3,7 @@ nnoremap <SPACE> <Nop>
 let mapleader=" "
 set signcolumn=yes
 
-set colorcolumn=80
+set colorcolumn=100
 set background=dark
 set t_Co=256
 set autowriteall

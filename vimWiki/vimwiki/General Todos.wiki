@@ -1,0 +1,39 @@
+= General Todos = 
+
+# IN PROGRESS 🔨
+
+- Sort laptop keybinds, need Caps + hjkl for arrows at min
+- vim wiki
+
+# TODO ⏲
+
+- Get debugging working
+
+# Almsost Done 🐂
+
+- [[Create script for opening projects]] 
+ 
+# EXPLORE 🎈
+
+- [[cht.sh]]
+- [[newsboat]] 
+- [[Play vim games]] 
+- [[New Commands]]
+
+# Done 🍰
+
+- Create recycling bin - not working for duplicate file names
+- Tmux resurrect
+- Terminal binds fucked window bind - read ditching tmux article 
+- Kitty scrollback - ctrl + shift + h 
+- sort stow, tmux
+- Stow dotfiles - pending install script tetst
+- vim wiki
+
+ 
+# RIP 💀
+
+- [[Sort Harware keyboard]] 
+- nvim terminal - using tmux instead for now
+- [[Create NVIM plugin]]
+

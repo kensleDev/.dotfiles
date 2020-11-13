@@ -1,0 +1,3 @@
+- Tried resolder and bottom row keys seems to work but
+- Need to investigate further, possibly get another pro micro to test
+- left col and thumb row not working still

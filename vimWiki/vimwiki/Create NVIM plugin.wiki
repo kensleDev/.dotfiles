@@ -1,0 +1,5 @@
+Created plugin in ~/.config/nvim/rplugin
+Was going to do a todo app but vim wiki seems fine 
+Need a new idea, 
+
+Looking into lua for writing plugins

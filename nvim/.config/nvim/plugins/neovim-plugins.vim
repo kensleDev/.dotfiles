@@ -4,7 +4,6 @@
 call plug#begin('~/.vim/plugged')
 
 " Make sure you use single quotes
-
 	Plug 'tpope/vim-commentary'
 	Plug 'justinmk/vim-sneak'
 	Plug 'unblevable/quick-scope'
@@ -23,13 +22,14 @@ call plug#begin('~/.vim/plugged')
 	Plug 'tpope/vim-rhubarb'
 	Plug 'junegunn/gv.vim'
 	Plug 'tpope/vim-fugitive'
+	Plug 'tpope/vim-surround'
 	Plug 'puremourning/vimspector'
 	Plug 'tmux-plugins/vim-tmux'
 	Plug 'zhou13/vim-easyescape'
-	Plug 'tpope/vim-surround'
   Plug 'ludovicchabant/vim-gutentags'
   Plug 'airblade/vim-rooter'
   Plug 'ThePrimeagen/vim-be-good'
+  Plug 'vimwiki/vimwiki'
 
 " Initialize plugin system
 call plug#end()

@@ -1,0 +1,6 @@
+- script made in ~/.config/scripts - currently takes you to the project dir and changes to that dir
+--- 📓 Sidelined for project managment in tmux / vim
+--- 📓 considering using tmux still as it works nice for launching serpreate sessions
+--- crated open.ts, works in seperate projects, working to make generic
+
+

@@ -1,0 +1,4 @@
+- Installed and added some feeds
+- Seems intuative but image support is lacking
+- Seen some pobbile solutions online
+- Also need to look at launch videos/media locally

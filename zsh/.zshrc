@@ -40,3 +40,4 @@ fi
 
 xmodmap ~/.config/keyboard/.xmodmap
 set NVIM_LISTEN_ADDRESS=/tmp/nvimsocket
+xcape -e 'Hyper_L=Escape'

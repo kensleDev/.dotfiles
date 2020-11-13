@@ -1,13 +1,8 @@
 
 # IN PROGRESS 🔨
 
-🔨 Create todo NVIM plugin
---- 📓 looking into lua for writing plugins
-
 # TODO ⏲
 
-⏲ sort stow, tmux
-⏲ nvim terminal
 ⏲ Get debugging working
 
 # Almsost Done 🐂
@@ -25,6 +20,7 @@
 ---📓 Terminal now works with alt + w/e/r , swaps seemlessly and is a buffer so
 is managed like any other
 🍰 Kitty scrollback - ctrl + shift + h 
+🍰sort stow, tmux
 
 # EXPLORE 🎈
 
@@ -38,5 +34,6 @@ is managed like any other
 ⏲ Sort laptop keybinds, need Caps + hjkl for arrows at min
 ⏲ Sort Harware keyboard - Tried resolder and bottom row keys seems to work but
 left col and thumb row not working still
-
-
+💀 nvim terminal - using tmux instead for now
+💀 Create todo NVIM plugin
+--- 📓 looking into lua for writing plugins

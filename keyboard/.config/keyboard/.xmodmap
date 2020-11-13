@@ -1,7 +1,8 @@
-! Exchange right Alt and left Win
+! Exchange left Alt and left Win
 remove mod1 = Alt_R
 remove mod4 = Super_R
 add mod1 = Super_R
 add mod4 = Alt_R
 
-
+remove mod4 = Hyper_L
+add mod3 = Hyper_L

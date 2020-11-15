@@ -160,6 +160,8 @@ g:which_key_sep	nvim/.config/nvim/plugins/config/whichkey.config.vim	/^let g:whi
 g:which_key_use_floating_win	nvim/.config/nvim/plugins/config/whichkey.config.vim	/^let g:which_key_use_floating_win = 0$/;"	v
 gd	nvim/.config/nvim/plugins/config/coc.config.vim	/^nmap <silent> gd <Plug>(coc-definition)$/;"	m
 gi	nvim/.config/nvim/plugins/config/coc.config.vim	/^nmap <silent> gi <Plug>(coc-implementation)$/;"	m
+gitModified	nvim/.config/nvim/plugins/config/start_page.config.vim	/^function! s:gitModified()$/;"	f
+gitUntracked	nvim/.config/nvim/plugins/config/start_page.config.vim	/^function! s:gitUntracked()$/;"	f
 git_upload_ssh_key	scripts/.config/scripts/init.sh	/^function git_upload_ssh_key () {$/;"	f
 gr	nvim/.config/nvim/plugins/config/coc.config.vim	/^nmap <silent> gr <Plug>(coc-references)$/;"	m
 gy	nvim/.config/nvim/plugins/config/coc.config.vim	/^nmap <silent> gy <Plug>(coc-type-definition)$/;"	m

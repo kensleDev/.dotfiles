@@ -3,7 +3,6 @@
 # IN PROGRESS 🔨
 
 - Sort laptop keybinds, need Caps + hjkl for arrows at min
-- vim wiki
 
 # TODO ⏲
 
@@ -29,7 +28,6 @@
 - sort stow, tmux
 - Stow dotfiles - pending install script tetst
 - vim wiki
-
  
 # RIP 💀
 

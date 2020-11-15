@@ -1,0 +1,9 @@
+- Products 
+  -- Could be stored in markdown and editored via Netlify CMS, backed up to database? 
+
+- Payments
+- -- Need to decide, Braintree?
+
+- Frontend
+- Gridsome Vue JAMSTACK
+

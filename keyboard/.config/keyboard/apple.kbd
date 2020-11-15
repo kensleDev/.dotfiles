@@ -16,12 +16,18 @@
   sc (tap-next spc lctl)
   ce (tap-next ret lctl)
   en (tap-next esc @nav)
+  lww (tap-next bspc @low)
   wfd A-esc
 
   all C-a
   sve C-s
-  
-
+  udo C-z
+  rdo C-S-z
+  cut C-x
+  cpy C-c
+  pst C-v
+  fnd C-f
+  DEL A-bspc 
 )
 
 (defsrc
@@ -37,28 +43,28 @@
   _    _    _    _    _    _    _    _    _    _    _    _    _
   _    _    _    _    _    _    _    _    _    _    _    _    _    _
   _    _    _    _    _    _    _    _    _    _    _    bspc _    _
-  @nav _    _    _    _    _    _    _    _    _    _    ret  _
+  @en  _    _    _    _    _    _    _    _    _    _    ret  _
   _    _    _    _    _    _    _    _    _    _    _    _    _
-       lmet _    @low           _             @hi   lctl _    _    _
+       lmet lctl @lww           _              @hi  lalt _    _    _
 )
 
 
 (deflayer low
   _    _    _    _    _    _    _    _    _    _    _    _    _
   _    _    _    _    _    _    _    _    _    _    _    _    _    _
-  _    !    @    #   \_    %    _    7    8    9    +    _    _    _
+  _    !    @    #   \_    %    _    7    8    9    +    @DEL _    _
   _    ?    `    "    '    ^    $    4    5    6    -    _    _
   _    |    [    {   \(    &    _    1    2    3    *    _    _
        _    _    _              _              0    _    _    _    _
 )
-
+ 
 
 (deflayer high
   _    _    _    _    _    _    _    _    _    _    _    _    _
   _    _    _    _    _    _    _    _    _    _    _    _    _    _
   _    _    _    F10  F11  F12  _    _    _    _    _    _    _    _
   _    _    _    F7   F8   F9   _    _    _    _    _    _    _
-  _    _    _    F4   F5   F6   _    _    \)   }    ]    ~    _
+  _    _    _    F4   F5   F6   _    \)   }    ]    ~    _    _
        F1   F2   F3             _              _    _    _    _    _
 )
 
@@ -67,8 +73,8 @@
   _    _    _    _    _    _    _    _    _    _    _    _    _
   _    _    _    _    _    _    _    _    _    _    _    _    _    _
   _    _    _    _    _    _    _    home pgdn pgup end  _    _    _
-  _    all  sve  del  _    _    @wfd left down up   rght _    _ 
-  _    _    _    _    _    _    _    _    _    _    _    _    _
+  _    @all @sve del  @fnd _    @wfd left down up   rght _    _ 
+  _    @udo @cut @cpy @pst _    _    _    _    _    _    _    _
        _    _    _              _              _    _    _    _    _
 )
 

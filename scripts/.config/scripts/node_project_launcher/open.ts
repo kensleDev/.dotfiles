@@ -1,7 +1,6 @@
 import { exec } from 'https://cdn.depjs.com/exec/mod.ts'
 import { existsSync } from "https://deno.land/std@0.77.0/fs/mod.ts";
 
-
 const PROJECT_NAME = Deno.args[1]
 const CURRENT_DIR = Deno.args[0]
 
@@ -14,9 +13,9 @@ function handleArgs(args: string[]) {
     } else if (arg === '-e') {
       await project.install()
       await project.editor()
-      await project.server("split right")
-      await exec(`tmux select-pane -l`)
-      await exec(`tmux attach-session -t ${PROJECT_NAME}`)
+      // await project.server("split right")
+      // await exec(`tmux select-pane -l`)
+      // await exec(`tmux attach-session -t ${PROJECT_NAME}`)
     } 
   })
 }
@@ -38,8 +37,8 @@ const project = {
    // }
    if (location === 'split right') {
       await tmux.openNewSplit("right")
-      await exec({ cmd: [`tmux resize-pane -R 30`], cwd: CURRENT_DIR })
-      await exec({ cmd: ["tmux send -t code.1 yarn SPACE start ENTER"], cwd: CURRENT_DIR })
+      // await exec({ cmd: [`tmux resize-pane -R 30`], cwd: CURRENT_DIR })
+      // await exec({ cmd: ["tmux send -t code.1 yarn SPACE start ENTER"], cwd: CURRENT_DIR })
     } else {
       await tmux.openNewWindow("server", "yarn start")
     }

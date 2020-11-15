@@ -1,3 +1,6 @@
+alias vbox='docker run -ti -e TZ=Asia/Kolkata -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix -e TMPDIR="/tmp/" -e TERM=xterm -e GIT_USERNAME="Your Name" -e GIT_EMAIL="YourEmail@Stealer.com"  --rm -v /etc/timezone:/etc/timezone:ro -v $HOME/tmp/:/tmp/ -v ~/.ssh:/home/spacevim/.ssh -v $(pwd):/home/spacevim/src varunbatrait/spacebox'
+
+
 # Nvim Remote
 alias nr='nvr --servername /tmp/nvimsocket --remote'
 alias nrs='nvr --servername /tmp/nvimsocket --remote-send'

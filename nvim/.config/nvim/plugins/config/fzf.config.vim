@@ -1,10 +1,10 @@
 set grepprg=rg\ --vimgrep\ --smart-case\ --follow
 
-let g:fzf_preview_window = ['right:50%', 'ctrl-/']
+let g:fzf_preview_window = ['right:60%', 'ctrl-/']
 
 let g:fzf_tags_command = 'ctags -R'
 " Border color
-let g:fzf_layout = {'up':'~90%', 'window': { 'width': 0.8, 'height': 0.8,'yoffset':0.5,'xoffset': 0.5, 'highlight': 'Todo', 'border': 'sharp' } }
+let g:fzf_layout = {'down':'~100%', 'window': { 'width': 0.99, 'height': 0.99,'yoffset':0.4,'xoffset': 0.4, 'highlight': 'Todo', 'border': 'sharp' } }
 
 let $FZF_DEFAULT_OPTS = '--layout=reverse --info=inline'
 

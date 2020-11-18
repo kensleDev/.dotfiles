@@ -156,3 +156,9 @@ set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 " nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " " Resume latest coc list.
 " nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
+
+
+autocmd FileType javascript let b:coc_root_patterns = ['.git', '.env']
+autocmd FileType typscript let b:coc_root_patterns = ['.git', '.env']
+autocmd FileType vue let b:coc_root_patterns = ['.git', '.env']
+

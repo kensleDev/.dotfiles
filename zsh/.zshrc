@@ -42,5 +42,5 @@ xmodmap ~/.config/keyboard/.xmodmap
 set NVIM_LISTEN_ADDRESS=/tmp/nvimsocket
 xcape -e 'Hyper_L=Escape'
 
-pkill kmonad 
-sleep 1 && kmonad ~/.config/keyboard/apple.kbd &
+# pkill kmonad 
+# sleep 1 && kmonad ~/.config/keyboard/apple.kbd &

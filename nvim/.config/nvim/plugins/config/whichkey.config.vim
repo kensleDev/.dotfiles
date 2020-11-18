@@ -11,7 +11,7 @@ let g:which_key_sep = '→'
 
 " Not a fan of floating windows for this
 let g:which_key_use_floating_win = 0
-"
+
 " " Change the colors if you want
 highlight default link WhichKey          Operator
 highlight default link WhichKeySeperator DiffAdded
@@ -23,25 +23,14 @@ autocmd! FileType which_key
 autocmd  FileType which_key set laststatus=0 noshowmode noruler
   \| autocmd BufLeave <buffer> set laststatus=2 noshowmode ruler
 
-" Single mappings
-
 " Programs
 let g:which_key_map['e'] = [ ':CocCommand explorer --position right --width 70', 'explorer' ]
 let g:which_key_map['r'] = [ ':Ranger'                    , 'ranger' ]
 let g:which_key_map['q'] = [ ':Startify'                  , 'startify' ]
 
 " Movement
-let g:which_key_map['j'] = [ '<C-\><C-n><C-W>h'                 , 'left' ]
-let g:which_key_map['k'] = [ '<C-\><C-n><C-W>j'                 , 'down' ]
-let g:which_key_map['l'] = [ '<C-\><C-n><C-W>k'                 , 'up' ]
-let g:which_key_map[';'] = [ '<C-\><C-n><C-W>l'                 , 'right' ]
 let g:which_key_map['J'] = [ ':windo wincmd K'        , 'change splits horizontal' ]
 let g:which_key_map['K'] = [ ':windo wincmd H'        , 'change splits vertical' ]
-
-let g:which_key_map.a = {
-     \ 'name' : '+comment',
-     \ 'a' : [':Commentary' , 'comment'],
-     \ }
 
 let g:which_key_map.b = {
      \ 'name' : '+buffer',
@@ -50,30 +39,33 @@ let g:which_key_map.b = {
      \ 'q' : ['<C-w>q' , 'split close'],
      \ 'm' : [':tabedit %' , 'max current pane to tab'],
      \ 'n' : [':tabclose' , 'back to split panes'],
+     \ 'c' : [':bd' , 'buffer close'],
+     \ 'x' : [':bn' , 'buffer next'],
+     \ 'z' : [':bp' , 'buffer prev'],
      \ }
-
 
 let g:which_key_map.c = {
-     \ 'name' : '+coc',
-     \ 'c' : [':CocAction("diagnosticNext")', 'next error'],
-     \ 'x' : ['CocAction("diagnosticPrevious")' , 'previous error'],
-     \ 'm' : [':CocList marketplace' , 'marketplace'],
-     \ '' : [':tabclose' , 'back to split panes'],
+     \ 'name' : '+comment',
+     \ 'l' : [':Commentary' , 'current line'],
+     \ 'p' : ['vipgc' , 'current line'],
+     \ 'd' : ['gccyypgcc' , 'current line'],
      \ }
 
+let g:which_key_map.f = {
+     \ 'name' : '+files',
+     \ 's' : [':w'                          , 'write'],
+     \ 'q' : [':wq'                         , 'write + quit'],
+     \ 'd' : [':%bdelete|edit #|normal `"'  , 'close all but this'],
+     \ }
 
 let g:which_key_map.g = {
      \ 'name' : '+git',
      \ 'g' : [':FloatermNew lazygit' , 'lazygit'],
      \ 'b' : [':GBrowse'             , 'browse repo'],
      \ 'd' : [':Gdiffsplit'          , 'diff split'],
+     \ 'c' : [':GV'                  , 'commit browser'],
+     \ 'f' : [':GV'                  , 'current file commits'],
      \ }
-
-let g:which_key_map.f = {
-      \ 'name' : '+find & replace' ,
-      \ 'b' : [':Farr --source=vimgrep'    , 'files'],
-      \ 'p' : [':Farr --source=rgnvim'     , 'project'],
-      \ }
 
 let g:which_key_map.s = {
       \ 'name' : '+search' ,
@@ -103,28 +95,20 @@ let g:which_key_map.s = {
       \ 'z' : [':FZF'          , 'FZF'],
       \ }
 
-let g:which_key_map.t = {
-     \ 'name' : '+terminal',
-     \ 'q' : [':FloatermNew' , 'new'],
-     \ 't' : [':FloatermToggle' , 'toggle'],
-     \ 'r' : [':FloatermNext' , 'next'],
-     \ 'e' : [':FloatermPrev' , 'prev'],
+let g:which_key_map.S = {
+      \ 'name' : '+find & replace' ,
+      \ 'b' : [':Farr --source=vimgrep'    , 'files'],
+      \ 'p' : [':Farr --source=rgnvim'     , 'project'],
+      \ }
+
+let g:which_key_map.z = {
+     \ 'name' : '+coc',
+     \ 'c' : [':CocAction("diagnosticNext")', 'next error'],
+     \ 'x' : ['CocAction("diagnosticPrevious")' , 'previous error'],
+     \ 'm' : [':CocList marketplace' , 'marketplace'],
+     \ '' : [':tabclose' , 'back to split panes'],
      \ }
 
-
-let g:which_key_map.x = {
-     \ 'name' : '+buffers',
-     \ 'c' : [':bd' , 'buffer close'],
-     \ 'x' : [':bn' , 'buffer next'],
-     \ 'z' : [':bp' , 'buffer prev'],
-     \ }
-
-let g:which_key_map.w = {
-     \ 'name' : '+write',
-     \ 'e' : [':w' , 'write'],
-     \ 'q' : [':wq' , 'write quit'],
-     \ 'w' : [':bn' , 'buffer next'],
-     \ }
 
 
 " Register which key map

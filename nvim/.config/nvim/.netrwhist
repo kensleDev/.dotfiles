@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =1
+let g:netrw_dirhist_1='/home/kd/repos/commerce/kd-ecommerce'
+let g:netrw_dirhist_0='/home/kd/repos/commerce/sls-commerce'
+let g:netrw_dirhist_9='/home/kd/repos/commerce/demo-apollo-server-lambda'
+let g:netrw_dirhist_8='/home/kd/repos/commerce/my-graphql-app'
+let g:netrw_dirhist_7='/home/kd/repos/sls-ecommerce'
+let g:netrw_dirhist_6='/home/kd/repos/kd-ecommerce'
+let g:netrw_dirhist_5='/home/kd/repos/sls-ecommerce'
+let g:netrw_dirhist_4='/home/kd/.dotfiles'
+let g:netrw_dirhist_3='/home/kd/repos/kd-ecommerce'
+let g:netrw_dirhist_2='/home/kd/repos/kd-ecommerce/src'

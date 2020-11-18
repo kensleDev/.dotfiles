@@ -9,7 +9,8 @@
   ],
   "snippets.ultisnips.directories": ["~/.config/nvim/snips"],
 
-  // explorer
+  "tsserver.enableJavascript": false,
+
   "explorer.width": 50,
   "explorer.icon.enableNerdfont": true,
   "explorer.previewAction.onHover": false,

@@ -1,11 +1,11 @@
 {
     "type": "script",
-    "description": "5",
+    "description": "enter",
     "store": {},
     "modes": [
         3
     ],
-    "usageCount": 27,
+    "usageCount": 3,
     "prompt": false,
     "omitTrigger": false,
     "showInTrayMenu": false,
@@ -19,10 +19,9 @@
     },
     "hotkey": {
         "modifiers": [
-            "<ctrl>",
             "<hyper>"
         ],
-        "hotKey": "k"
+        "hotKey": "'"
     },
     "filter": {
         "regex": null,

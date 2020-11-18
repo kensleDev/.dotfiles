@@ -5,7 +5,6 @@ call plug#begin('~/.vim/plugged')
 
 " Make sure you use single quotes
 	Plug 'tpope/vim-commentary'
-	Plug 'justinmk/vim-sneak'
 	Plug 'unblevable/quick-scope'
 	Plug 'haya14busa/incsearch.vim'
 	Plug 'herrbischoff/cobalt2.vim'
@@ -43,7 +42,6 @@ source $HOME/.config/nvim/plugins/config/quickscope.config.vim
 source $HOME/.config/nvim/plugins/config/fzf.config.vim
 source $HOME/.config/nvim/plugins/config/airline.config.vim
 source $HOME/.config/nvim/plugins/config/whichkey.config.vim
-source $HOME/.config/nvim/plugins/config/ranger.config.vim
 source $HOME/.config/nvim/plugins/config/start_page.config.vim
 source $HOME/.config/nvim/plugins/config/far.config.vim
 source $HOME/.config/nvim/plugins/config/signify.config.vim

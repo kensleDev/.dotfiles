@@ -15,8 +15,12 @@ nmap <leader>gk <plug>(signify-prev-hunk)
 nmap <leader>gJ 9999<leader>gJ
 nmap <leader>gK 9999<leader>gk
 
+highlight SignColumn guibg=#193549
 
+
+highlight SignifySignAdd                  ctermbg=green  guifg=green   guibg=#193549
+highlight SignifySignDelete ctermfg=black ctermbg=red    guifg=#red guibg=#193549
+highlight SignifySignChange ctermfg=black ctermbg=yellow guifg=#yellow guibg=#193549
 " If you like colors instead
- highlight SignifySignAdd    ctermfg=green ctermbg=green guifg=green guibg=#193549
- highlight SignifySignDelete ctermfg=red ctermbg=red    guifg=red guibg=#193549
- highlight SignifySignChange ctermfg=blue ctermbg=blue guifg=#ebcc34 guibg=#193549
+
+

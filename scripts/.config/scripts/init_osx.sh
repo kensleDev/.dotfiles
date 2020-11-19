@@ -4,7 +4,7 @@
 brew cask install iterm2 brave-browser alfred bettertouchtool karabiner-elements rambox
 
 # terminal apps
-brew install  curl stow python ripgrep fd the_silver_searcher bat fzf ruby nvm
+brew install  curl stow python ripgrep fd the_silver_searcher bat fzf ruby nvm skhd
 
 # window manager
 brew install koekeishiya/formulae/yabai
@@ -20,9 +20,8 @@ sudo chown -R julianiaquinandi /usr/local/share/zsh
 sudo chmod -R 755 /usr/local/share/zsh
 
 # neovim
-curl -LO https://github.com/neovim/neovim/releases/download/nightly/nvim-macos.tar.gz
-tar xzf nvim-macos.tar.gz
-sudo mv nvim-osx64/bin/nvim /usr/local/bin	
+brew tap jason0x43/homebrew-neovim-nightly
+brew cask install neovim-nightly
 
 # Python 2
 cd ~ 

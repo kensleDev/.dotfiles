@@ -5,6 +5,9 @@
 		},
 		{
 			"path": "skhd"
+		},
+		{
+			"path": "../../../.hammerspoon"
 		}
 	],
 	"settings": {}

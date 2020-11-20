@@ -29,7 +29,10 @@ wget https://raw.githubusercontent.com/Homebrew/homebrew-core/86a44a0a552c673a05
 brew install python@2.rb
 rm python@2.rb
 
-sudo pip3 install ranger-fm 
+# Nvim plugins
+sudo pip3 install neovim ranger-fm 
+sudo pip install neovim
+sudo gem install neovim
 
 # Vim plug 
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \

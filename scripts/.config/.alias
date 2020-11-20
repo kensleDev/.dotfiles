@@ -10,7 +10,6 @@ alias h='nvr --servername /tmp/vimsocket -o'
 alias v='nvr --servername /tmp/vimsocket -O'
 alias t='nvr --servername /tmp/vimsocket --remote-tab'
 
-
 alias keyd='sleep 1 && kmonad ~/.config/keyboard/apple.kbd --log-level debug'
 
 CURRENT_USER=$(whoami)
@@ -24,8 +23,6 @@ alias map="telnet mapscii.me"
 function weather() {
   echo -n "Enter a location: "
   read location
-
-
   # read -p "Enter a location: " location 
 curl -s v3.wttr.in/$location.png | kitty icat --align=left 
 }

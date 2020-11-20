@@ -3,17 +3,20 @@ alt - q : launchctl kickstart -k "gui/${UID}/homebrew.mxcl.yabai"
 
 # focus window
 alt - k : yabai -m window --focus next
-alt - j: yabai -m window --focus prev
+alt - j : yabai -m window --focus prev
 
-# focus window
-alt - l : yabai -m window --swap next
-alt - h : yabai -m window --swap prev
+#  swap windows
+alt - l : yabai -m space --mirror y-axis
+alt - h : yabai -m space --mirror x-axis
 
 # resize window
 alt - m : yabai -m window --ratio abs:0.666
 alt - n : yabai -m window --ratio abs:0.55
-alt - v : yabai -m space --mirror y-axis
-alt - b : yabai -m space --mirror x-axis
+
+# focus workspace
+alt - v : yabai -m space --focus next
+alt - b : yabai -m space --focus prev
+
 
 alt - c : yabai -m space --toggle padding; yabai -m space --toggle gap
 alt - x : yabai -m window --toggle split

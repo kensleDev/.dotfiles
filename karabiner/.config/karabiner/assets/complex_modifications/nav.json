@@ -51,7 +51,7 @@
             }
           },
           "parameters": {
-            "basic.to_if_alone_timeout_milliseconds": 200,
+            "basic.to_if_alone_timeout_milliseconds": 150,
             "basic.to_if_held_down_threshold_milliseconds": 50
           },
           "to_if_alone": [
@@ -66,9 +66,8 @@
           ]
         }
         
-      ]
+      ]      
     },
-
     {
       "description": "Hold: leftCmd, Tap: escape",
       "manipulators": [
@@ -104,13 +103,13 @@
     },
 
     {
-      "description": "Hold: leftShift, Tap: z",
+      "description": "Hold: rightCmd + control, Tap: escape", 
       "manipulators": [
 
         {
           "type": "basic",
           "from": {
-            "key_code": "z",
+            "key_code": "right_alt",
             "modifiers": {
               "mandatory": [],
               "optional": [
@@ -124,12 +123,13 @@
           },
           "to_if_alone": [
             {
-              "key_code": "z" 
+              "key_code": "escape" 
             }
           ],
           "to_if_held_down": [
             {
-              "key_code": "left_shift"
+              "key_code": "left_control",
+              "modifiers": "right_alt"
             }
           ]
         }
@@ -138,32 +138,53 @@
     },
 
     {
-      "description": "Hold: leftShift, Tap: /",
+      "description": "launcher", 
       "manipulators": [
 
         {
           "type": "basic",
           "from": {
-            "key_code": "/",
+            "simultaneous": [
+              {
+                  "key_code": "j"
+              },
+              {
+                  "key_code": "l"
+              }
+            ],
             "modifiers": {
-              "mandatory": [],
-              "optional": [
-                "any"
-              ]
+                "optional": ["any"]
             }
           },
-          "parameters": {
-            "basic.to_if_alone_timeout_milliseconds": 200,
-            "basic.to_if_held_down_threshold_milliseconds": 50
-          },
-          "to_if_alone": [
+          "to": [
             {
-              "key_code": "/" 
+              "key_code": "tab",
+              "modifiers": ["left_command"]
             }
-          ],
-          "to_if_held_down": [
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "simultaneous": [
+              {
+                  "key_code": "j"
+              },
+              {
+                  "key_code": "l"
+              },
+              {
+                "key_code": "left_shift"
+              }
+            ],
+            "modifiers": {
+                "optional": ["any"]
+            }
+          },
+          "to": [
             {
-              "key_code": "left_shift"
+              "key_code": "tab",
+              "modifiers": ["left_command"]
             }
           ]
         }

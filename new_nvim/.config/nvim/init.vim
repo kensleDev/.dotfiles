@@ -21,7 +21,7 @@ highlight  CursorLine ctermbg=Yellow ctermfg=None
 
 
 " map leader 
-nnoremap <SPACE> <Nop>
+nnoremap , <Nop>
 let mapleader=" "
 set signcolumn=yes
 

@@ -1,10 +1,12 @@
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
 # osx apps
-brew cask install iterm2 brave-browser alfred bettertouchtool karabiner-elements rambox
+brew cask install iterm2 brave-browser alfred karabiner-elements rambox barrier
 
 # terminal apps
-brew install  curl stow python ripgrep fd the_silver_searcher bat fzf ruby nvm skhd
+brew install  curl stow python ripgrep fd the_silver_searcher bat fzf ruby nvm 
+
+-- skhd
 
 # window manager
 brew install koekeishiya/formulae/yabai
@@ -16,7 +18,7 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 
 curl -L git.io/antigen > antigen.zsh
 mv antigen.zsh ~/.oh-my-zsh/plugins
-sudo chown -R julianiaquinandi /usr/local/share/zsh
+sudo chown -R $USER /usr/local/share/zsh
 sudo chmod -R 755 /usr/local/share/zsh
 
 # neovim
@@ -28,6 +30,10 @@ cd ~
 wget https://raw.githubusercontent.com/Homebrew/homebrew-core/86a44a0a552c673a05f11018459c9f5faae3becc/Formula/python@2.rb
 brew install python@2.rb
 rm python@2.rb
+
+# Node
+nvm install 12.13.0 &&
+npm i -g yarn neovim
 
 # Nvim plugins
 sudo pip3 install neovim ranger-fm 
@@ -45,6 +51,3 @@ nvim +PlugInstall +qall > /dev/null &&
 nvim +CocInstall coc-marketplace +qall > /dev/null &&
 nvim +UpdateRemovePlugins +qall > /dev/null &&
 
-# Node
-nvm install 12.13.0 &&
-npm i -g yarn neovim 

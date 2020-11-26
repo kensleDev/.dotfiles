@@ -14,7 +14,7 @@ sudo chown -R $USER /usr/local/share/zsh
 sudo chmod -R 755 /usr/local/share/zsh
 
 # dotfiles 
-stow git fonts scripts tmux hammerspoon vimWiki --adopt
+stow git zsh fonts scripts tmux hammerspoon vimWiki --adopt
 
 # Python 2
 cd ~ 

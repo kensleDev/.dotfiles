@@ -1,4 +1,4 @@
-HOME_DIR=/Users/julianiaquinandi
+HOME_DIR=/Users/$USER
 
 export FZF_DEFAULT_OPTS="--ansi --preview-window 'right:60%' --preview 'bat --color=jjkkalways --style=header,grid --line-range :300 {}'"
 # [ -f $HOME_DIR/.fzf.bash ] && source $HOME_DIR/.fzf.bash

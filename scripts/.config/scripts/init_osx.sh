@@ -29,7 +29,7 @@ npm i -g yarn neovim
 # neovim
 brew tap jason0x43/homebrew-neovim-nightly
 brew cask install neovim-nightly
-cd ~/.dotfiles && stow new_neovim --adopt && cd 
+cd ~/.dotfiles && stow new_nvim --adopt && cd 
 
 # NVim plug 
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \

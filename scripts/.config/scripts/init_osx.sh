@@ -1,8 +1,4 @@
-PRINT() {
-  echo "-----"
-  echo "-> $1"
-  echo "-----"
-}
+source try_catch.sh
 
 DOTFILE() { 
   cd ~/.dotfiles && 
@@ -12,9 +8,27 @@ DOTFILE() {
   cd
 }
 
+PRINT() {
+  echo "-----"
+  echo "-> $1"
+  echo "-----"
+}
 
-# Homebrew
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+LOG() {
+  
+}
+
+
+ERR() {
+  PRINT "-> Err! file: $2 line: $3 -> $1
+}
+
+install_homebrew() {
+  try
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+  catch 
+    ERR "instal : Homebrew" $__EXCEPTION_SOURCE__ $__EXCEPTION_LINE__
+}
 
 # osx apps
 brew cask install iterm2 brave-browser alfred karabiner-elements rambox barrier spotify &&
@@ -75,8 +89,8 @@ nvim +CocInstall coc-marketplace +qall > /dev/null &&
 nvim +UpdateRemovePlugins +qall > /dev/null &&
 PRINT "NEOVIM NIGHTLY : Configured"
 
-# skhd
 
+# skhd
 # window manager
 # brew install koekeishiya/formulae/yabai
 # sudo yabai —install-sa

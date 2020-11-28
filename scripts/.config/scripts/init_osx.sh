@@ -17,7 +17,7 @@ DOTFILE() {
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
 # osx apps
-brew cask install iterm2 brave-browser alfred karabiner-elements rambox barrier &&
+brew cask install iterm2 brave-browser alfred karabiner-elements rambox barrier spotify &&
 
 # terminal apps
 brew install curl stow ripgrep fd the_silver_searcher bat fzf ruby &&

@@ -9,13 +9,8 @@ function log() {
   echo "-------------------------------"
 }
 
-#source 'lib.trap.sh'
-#echo "doing something wrong now .."
-#echo "$foo"
-# exit 0
-
 # install base tools
-sudo apt-get install -y zsh curl stow &&
+sudo apt-get install -y zsh curl stow
 
 # oh my zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended &&
@@ -25,7 +20,7 @@ sudo chown -R $USER /usr/local/share/zsh &&
 sudo chmod -R 755 /usr/local/share/zsh
 
 # # copy dotfiles
-cd ~/.dotfiles && stow git new_nvim fonts scripts vimWiki tmux --adopt && cd ~/
+cd ~/.dotfiles && zsh stow git new_nvim fonts scripts vimWiki tmux --adopt && cd ~/
 
 # setup Fonts
 sudo apt-get install fontconfig &&
@@ -119,9 +114,9 @@ nvm install 12.13.0 &&
 npm i -g yarn &&
 
 # Nvim install
-curl -l https://github.com/neovim/neovim/releases/download/nightly/nvim.appimage > /tmp/nvim.appimage
-sudo mv /tmp/nvim.appimage /usr/local/bin/nvim
-chmod +x /usr/local/bin/nvim
+curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
+chmod u+x nvim.appimage
+sudo mv nvim.appimage /usr/local/bin
 
 # Nvim lang plugins
 sudo pip3 install neovim ranger-fm &&

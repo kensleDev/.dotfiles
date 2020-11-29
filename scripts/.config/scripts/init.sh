@@ -118,6 +118,11 @@ source ~/.zshrc &&
 nvm install 12.13.0 &&
 npm i -g yarn &&
 
+# Nvim install
+curl -l https://github.com/neovim/neovim/releases/download/nightly/nvim.appimage > /tmp/nvim.appimage
+sudo mv /tmp/nvim.appimage /usr/local/bin/nvim
+chmod +x /usr/local/bin/nvim
+
 # Nvim lang plugins
 sudo pip3 install neovim ranger-fm &&
 sudo pip install neovim &&

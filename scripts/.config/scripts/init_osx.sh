@@ -1,4 +1,11 @@
-source try_catch.sh
+#!/bin/bash
+
+os=?
+if [ -d /Applications ]; then
+  os=osx
+else
+  os=linux
+fi
 
 DOTFILE() { 
   cd ~/.dotfiles && 
@@ -14,31 +21,28 @@ PRINT() {
   echo "-----"
 }
 
-LOG() {
+
+if [ os == "osx" ]; then
   
+fi
+
+# Homebrew
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)" || {
+  error "Homebrew install" "${FUNCNAME}" "{LINENO}"
+  false
 }
 
+# brew cask install iterm2 brave-browser alfred karabiner-elements rambox barrier spotify &&
 
-ERR() {
-  PRINT "-> Err! file: $2 line: $3 -> $1
+# # terminal apps
+brew install curl stow ripgrep fd the_silver_searcher bat fzf ruby || {
+  error "Homebrew terminal apps" "${FUNCNAME}" "{LINENO}"
+  false
 }
 
-install_homebrew() {
-  try
-    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-  catch 
-    ERR "instal : Homebrew" $__EXCEPTION_SOURCE__ $__EXCEPTION_LINE__
-}
-
-# osx apps
-brew cask install iterm2 brave-browser alfred karabiner-elements rambox barrier spotify &&
-
-# terminal apps
-brew install curl stow ripgrep fd the_silver_searcher bat fzf ruby &&
-
-# dotfiles
+# # dotfiles
 DOTFILE git fonts scripts tmux hammerspoon vimWiki
-cd
+# cd
 
 # oh my zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended &&
@@ -47,14 +51,20 @@ mv antigen.zsh ~/.oh-my-zsh/plugins &&
 sudo chown -R $USER /usr/local/share/zsh &&
 sudo chmod -R 755 /usr/local/share/zsh &&
 PRINT "OH-MY-ZSH : Installed" &&
-DOTFILE zsh &&
-
+DOTFILE zsh || {
+  error "Oh-my-zsh" "${FUNCNAME}" "{LINENO}"
+  false
+}
+ 
 # Node
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | bash &&
 source ~/.zshrc &&
 nvm install 12.13.0 &&
 npm i -g yarn &&
-PRINT "NVM/NODE/YARN : Installed + Configured"
+PRINT "NVM/NODE/YARN : Installed + Configured" || {
+  error "Node/nvm/yarn install" "${FUNCNAME}" "{LINENO}"
+  false
+}
 
 # Python 2/3
 brew install python &&
@@ -62,7 +72,10 @@ cd ~ &&
 wget https://raw.githubusercontent.com/Homebrew/homebrew-core/86a44a0a552c673a05f11018459c9f5faae3becc/Formula/python@2.rb &&
 brew install python@2.rb &&
 rm python@2.rb &&
-PRINT "PYTHON2/3 : Installed + Configured"
+PRINT "PYTHON2/3 : Installed + Configured" || {
+  error "Python 2/3 install" "${FUNCNAME}" "{LINENO}"
+  false
+}
 
 # neovim
 brew tap jason0x43/homebrew-neovim-nightly &&
@@ -86,12 +99,15 @@ npm install &&
 cd ~/ &&
 nvim +PlugInstall +qall > /dev/null &&
 nvim +CocInstall coc-marketplace +qall > /dev/null &&
-nvim +UpdateRemovePlugins +qall > /dev/null &&
-PRINT "NEOVIM NIGHTLY : Configured"
+nvim +UpdateRemovePlugins +qall > /dev/null || {
+  error "Nvim install" "${FUNCNAME}" "{LINENO}"
+  false
+}
 
 
-# skhd
-# window manager
-# brew install koekeishiya/formulae/yabai
-# sudo yabai —install-sa
-# https://install.appcenter.ms/users/dexterleng/apps/vimac/distribution_groups/sparkle
+
+# # skhd
+# # window manager
+# # brew install koekeishiya/formulae/yabai
+# # sudo yabai —install-sa
+# # https://install.appcenter.ms/users/dexterleng/apps/vimac/distribution_groups/sparkle

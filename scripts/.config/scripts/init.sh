@@ -14,34 +14,18 @@ function log() {
 #echo "$foo"
 # exit 0
 
-function git_upload_ssh_key () {
-  read -p "Enter github email : " email
-  echo "Using email $email"
-  if [ ! -f ~/.ssh/id_rsa ]; then
-    ssh-keygen -t rsa -b 4096 -C "$email"
-    ssh-add ~/.ssh/id_rsa
-  fi
-  pub=`cat ~/.ssh/id_rsa.pub`
-  read -p "Enter github username: " githubuser
-  echo "Using username $githubuser"
-  read -s -p "Enter github password for user $githubuser: " githubpass
-  echo
-  read -p "Enter github OTP: " otp
-  echo "Using otp $otp"
-  echo
-  confirm
-  curl -u "$githubuser:$githubpass" -X POST -d "{\"title\":\"`hostname`\",\"key\":\"$pub\"}" --header "x-github-otp: $otp" https://api.github.com/user/keys
-}
-
 # install base tools
 sudo apt-get install -y zsh curl stow &&
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended &&
 
 # oh my zsh
-curl -L git.io/antigen > $HOME_DIR/.oh-my-zsh/plugins/antigen.zsh &&
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended &&
+curl -L git.io/antigen > antigen.zsh &&
+mv antigen.zsh ~/.oh-my-zsh/plugins &&
+sudo chown -R $USER /usr/local/share/zsh &&
+sudo chmod -R 755 /usr/local/share/zsh
 
 # # copy dotfiles
-cd ~/Dotfiles && stow * --adopt && cd ~/
+cd ~/.dotfiles && stow git new_nvim fonts scripts vimWiki tmux --adopt && cd ~/
 
 # setup Fonts
 sudo apt-get install fontconfig &&
@@ -116,7 +100,6 @@ log "Installed Ranger" &&
 
 # ruby
 sudo apt-get install -y ruby-full &&
-sudo gem install neovim &&
 log "Installed Ruby" &&
 
 # perl
@@ -130,16 +113,19 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 log "Installed Vim Plug" &&
 
 # nvm, node, yarn 
-wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.36.0/install.sh | bash &&
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | bash &&
+source ~/.zshrc &&
 nvm install 12.13.0 &&
-npm i -g yarn neovim &&
-log "Installed node and yarn" &&
+npm i -g yarn &&
+
+# Nvim lang plugins
+sudo pip3 install neovim ranger-fm &&
+sudo pip install neovim &&
+sudo gem install neovim &&
+npm i -g neovim 
+log "Installed vim lang plugins" &&
 
 # Vim plugins
-
 cd ~/.config/coc/extensions &&
 npm install &&
 cd ~/ &&
@@ -148,9 +134,7 @@ cd ~/ &&
 ~/.config/nvim/nvim.appimage +UpdateRemovePlugins +qall > /dev/null &&
 log "Installed vim plugins" &&
 
-
 # TMux 
-
 sudo apt-get install -y tmux &&
 cp ../dotfiles/tmux.conf $HOME_DIR &&
 mkdir -R ~/.config/tmux/plugins &&
@@ -159,11 +143,7 @@ git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm &&
 # keyboard setup
 
 # sudo apt-get install -y xmodmap xorg-xev xorg-setxkbmap xorg-xset:
-
-cd ~/Dotfiles && stow & --adopt && cd ~/
-
 # Clean up zsh
 echo "zsh" >> $HOME_DIR/.bashrc &&
 exec bash -l
-git_upload_ssh_key
 

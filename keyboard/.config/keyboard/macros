@@ -1,8 +1,0 @@
-
-MACRO_TYPE = $1
-MACRO_NAME = $2
-
-if [ $MACRO_TYPE = 'z' ]; then
-  xdotool key $MACRO_NAME
-fi
-

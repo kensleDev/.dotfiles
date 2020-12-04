@@ -117,6 +117,7 @@ npm i -g yarn &&
 curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
 chmod u+x nvim.appimage
 sudo mv nvim.appimage /usr/local/bin
+sudo mv /usr/local/bin/nvim.appimage /usr/bin/nvim
 
 # Nvim lang plugins
 sudo pip3 install neovim ranger-fm &&

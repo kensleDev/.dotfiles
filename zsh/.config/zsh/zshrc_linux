@@ -38,7 +38,11 @@ if [ "$TERM" != "linux" ] && [ -f "$GOPATH/bin/powerline-go" ]; then
     PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
 fi
 
+source ~/.config/keyboard/keys/keys.config
+
 # xmodmap ~/.config/keyboard/.xmodmap
+
+
 # set NVIM_LISTEN_ADDRESS=/tmp/nvimsocket
 # xcape -e 'Hyper_L=Escape'
 

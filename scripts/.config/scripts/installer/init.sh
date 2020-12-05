@@ -120,6 +120,8 @@ function INSTALL_NEOVIM() {
   sudo mv /usr/local/bin/nvim.appimage /usr/bin/nvim &&
   log "Installed Nvim Nighly" || err "Nvim Nightly"
 
+  DOTFILE new_nvim
+
   # Nvim lang plugins
   sudo pip3 install neovim &&
   sudo pip install neovim &&
@@ -131,9 +133,9 @@ function INSTALL_NEOVIM() {
   cd ~/.config/coc/extensions &&
   npm install &&
   cd ~/ &&
-  ~/.config/nvim/nvim.appimage +PlugInstall +qall > /dev/null &&
-  ~/.config/nvim/nvim.appimage +CocInstall coc-marketplace +qall > /dev/null &&
-  ~/.config/nvim/nvim.appimage +UpdateRemovePlugins +qall > /dev/null &&
+  nvim +PlugInstall +qall > /dev/null &&
+  nvim +CocInstall coc-marketplace +qall > /dev/null &&
+  nvim +UpdateRemovePlugins +qall > /dev/null &&
   log "Installed vim plugins" || err "vim plugins"
 
 }

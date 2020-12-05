@@ -114,10 +114,11 @@ function INSTALL_NEOVIM() {
   log "Installed Vim Plug" || err "Vim Plug"
 
   # Nvim install
-  curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage &&
+  curl -LO https://github.com/neovim/neovim/releases/download/nightly/nvim.appimage &&
   chmod u+x nvim.appimage &&
-  sudo mv nvim.appimage /usr/local/bin &&
-  sudo mv /usr/local/bin/nvim.appimage /usr/bin/nvim &&
+  sudo rm /usr/bin/nvim &&
+  sudo mv nvim.appimage /usr/bin &&
+  sudo mv /usr/bin/nvim.appimage /usr/bin/nvim &&
   log "Installed Nvim Nighly" || err "Nvim Nightly"
 
   DOTFILE new_nvim
@@ -126,7 +127,7 @@ function INSTALL_NEOVIM() {
   sudo pip3 install neovim &&
   sudo pip install neovim &&
   sudo gem install neovim &&
-  npm i -g neovim
+  npm i -g neovim &&
   log "Installed vim lang plugins"
 
   # Vim plugins

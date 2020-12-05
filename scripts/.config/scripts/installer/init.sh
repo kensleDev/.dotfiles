@@ -23,10 +23,10 @@ function DOTFILE() {
 # -- Installs
 
 function INSTALL_BASE_TOOLS() {
-  sudo apt-get install -y zsh curl stow
+  sudo apt-get install -y curl awesome stow
   sudo apt-get install -y autotools-dev autoconf pkg-config &&
   sudo apt install -y software-properties-common &&
-  DOTFILE "git fonts scripts vimWiki" &&
+  DOTFILE "git awesome fonts scripts vimWiki" &&
   log "Installed Base Tools" || err "Base Tools"
 }
 

@@ -9,6 +9,7 @@ function log() {
   echo "-------------------------------"
 }
 
+
 function err() {
   echo "-------------------------------"
   echo "-!!! ERROR -> $1 "
@@ -23,7 +24,7 @@ function DOTFILE() {
 # -- Installs
 
 function INSTALL_BASE_TOOLS() {
-  sudo apt-get install -y curl awesome stow
+  sudo apt-get install -y curl awesome rofi stow
   sudo apt-get install -y autotools-dev autoconf pkg-config &&
   sudo apt install -y software-properties-common &&
   DOTFILE "git awesome fonts scripts vimWiki" &&

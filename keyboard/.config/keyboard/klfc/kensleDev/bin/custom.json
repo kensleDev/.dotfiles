@@ -39,15 +39,15 @@
         { "pos": "U", "letters": [ "u", "U", "7", "F7", "Home" ] },
         { "pos": "I", "letters": [ "i", "I", "8", "F8", "PageDown" ] },
         { "pos": "O", "letters": [ "o", "O", "9", "F9", "PageUp" ] },
-        { "pos": "P", "letters": [ "p", "P", "+", "F10", "End" ] },
-        { "pos": "[", "letters": [ "[", "{" ] },
-        { "pos": "]", "letters": [ "]", "}" ] },
-        { "pos": "\\", "letters": [ "\\", "|" ] }
+        { "pos": "P", "letters": [ "p", "P", "+", "F10", "End" ] }
       ]
     },
     {
       "shiftlevels": [ "None", "Shift", "Extend" ],
       "keys": [
+        { "pos": "[", "letters": [ "[", "{", "Backspace" ] },
+        { "pos": "]", "letters": [ "]", "}" ] },
+        { "pos": "\\", "letters": [ "\\", "|" ] },
         { "pos": "A", "letters": [ "a", "A", "?" ] },
         { "pos": "S", "letters": [ "s", "S", "`" ] },
         { "pos": "D", "letters": [ "d", "D", "\"" ] },

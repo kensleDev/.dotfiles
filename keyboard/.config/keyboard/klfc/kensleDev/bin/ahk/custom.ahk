@@ -493,9 +493,11 @@ Return
 *SC019::Send {Blind}{End}
 
 ; QWERTY [
-#if
+#if not Extend
 SC01a::Send {Blind}{U+005b} ; [
 +SC01a::Send {Blind}{U+007b} ; {
+#if Extend
+*SC01a::Send {Blind}{BackSpace}
 
 ; QWERTY ]
 #if

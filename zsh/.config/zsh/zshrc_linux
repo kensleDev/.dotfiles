@@ -38,7 +38,7 @@ if [ "$TERM" != "linux" ] && [ -f "$GOPATH/bin/powerline-go" ]; then
     PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
 fi
 
-source ~/.config/keyboard/keys/keys.config
+# source ~/.config/keyboard/keys/keys.config
 
 # xmodmap ~/.config/keyboard/.xmodmap
 

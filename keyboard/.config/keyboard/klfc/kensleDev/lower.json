@@ -1,0 +1,29 @@
+// Extend layout based on DreymaR's Extend mappings
+// https://forum.colemak.com/topic/2014-extend-extra-extreme/
+{
+  "filter": "no klc,keylayout",
+  "singletonKeys": [
+    [ "Alt_L", "Numlock" ]
+  ],
+  "shiftlevels": [ "Numlock", "Shift+Numlock" ],
+  "keys": [
+    
+    { "pos": "y", "letters": [ "%" ] },
+    { "pos": "u", "letters": [ "7" ] },
+    { "pos": "i", "letters": [ "8" ] },
+    { "pos": "o", "letters": [ "9" ] },
+    { "pos": "p", "letters": [ "+" ] },
+    
+    { "pos": "h", "letters": [ "=" ] },
+    { "pos": "j", "letters": [ "4" ] },
+    { "pos": "k", "letters": [ "5" ] },
+    { "pos": "l", "letters": [ "6" ] },
+    { "pos": ";", "letters": [ "-" ] },
+    
+    { "pos": "n", "letters": [ "0" ] },
+    { "pos": "m", "letters": [ "1" ] },
+    { "pos": ",", "letters": [ "2" ] },
+    { "pos": ".", "letters": [ "3" ] },
+    { "pos": "/", "letters": [ "*" ] }
+  ]
+}

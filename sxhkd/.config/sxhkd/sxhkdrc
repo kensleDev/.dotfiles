@@ -1,0 +1,6 @@
+super + u
+        xdotool key a
+
+control + x
+  firefox
+

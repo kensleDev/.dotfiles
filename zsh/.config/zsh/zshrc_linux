@@ -38,17 +38,5 @@ if [ "$TERM" != "linux" ] && [ -f "$GOPATH/bin/powerline-go" ]; then
     PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
 fi
 
-if [ -f "~/.lappy" ]; then
-  qsh ~/.config/keyboard/klfc/kensleDev/bin/xkb/run-session.sh
-fi
-
-# source ~/.config/keyboard/keys/keys.config
-
-# xmodmap ~/.config/keyboard/.xmodmap
-
-
 # set NVIM_LISTEN_ADDRESS=/tmp/nvimsocket
-# xcape -e 'Hyper_L=Escape'
 
-# pkill kmonad 
-# sleep 1 && kmonad ~/.config/keyboard/apple.kbd &

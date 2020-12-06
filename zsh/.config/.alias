@@ -3,20 +3,12 @@ alias keys="clear && sed -n '/<!-- keymap -->/,/<!-- keymap end -->/p' /Users/ju
 alias vbox='docker run -ti -e TZ=Asia/Kolkata -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix -e TMPDIR="/tmp/" -e TERM=xterm -e GIT_USERNAME="Your Name" -e GIT_EMAIL="YourEmail@Stealer.com"  --rm -v /etc/timezone:/etc/timezone:ro -v $HOME/tmp/:/tmp/ -v ~/.ssh:/home/spacevim/.ssh -v $(pwd):/home/spacevim/src varunbatrait/spacebox'
 
 alias initos='nvim ~/.config/scripts/init_osx.sh'
-
-# Nvim Remote
-alias nr='nvr --servername /tmp/nvimsocket --remote'
-alias nrs='nvr --servername /tmp/nvimsocket --remote-send'
-alias nre='nvr --servername /tmp/nvimsocket --remote-expr'
-alias h='nvr --servername /tmp/vimsocket -o'
-alias v='nvr --servername /tmp/vimsocket -O'
-alias t='nvr --servername /tmp/vimsocket --remote-tab'
-
 alias keyd='sleep 1 && kmonad ~/.config/keyboard/apple.kbd --log-level debug'
 
 CURRENT_USER=$(whoami)
 alias=keys="sh /home/kd/.config/keyboard/keyboard_disable"
 
+# kitty 
 alias icat="kitty +kitten icat"
 alias d="kitty +kitten diff"
 
@@ -31,28 +23,7 @@ curl -s v3.wttr.in/$location.png | kitty icat --align=left
 
 alias removeQuotes="for f in *; do mv -i "$f" "${f//[\"[:space:]]}"; done"
 
-function git_upload_ssh_key () {
-  read -p "Enter github email : " email
-  echo "Using email $email"
-  if [ ! -f ~/.ssh/id_rsa ]; then
-    ssh-keygen -t rsa -b 4096 -C "$email"
-    ssh-add ~/.ssh/id_rsa
-  fi
-  pub=`cat ~/.ssh/id_rsa.pub`
-  read -p "Enter github username: " githubuser
-  echo "Using username $githubuser"
-  read -s -p "Enter github password for user $githubuser: " githubpass
-  echo
-  read -p "Enter github OTP: " otp
-  echo "Using otp $otp"
-  echo
-  confirm
-  curl -u "$githubuser:$githubpass" -X POST -d "{\"title\":\"`hostname`\",\"key\":\"$pub\"}" --header "x-github-otp: $otp" https://api.github.com/user/keys
-}
-
-# setxkbmap gb
-
-
+# vim 
 function vim() {
   NVIM_LISTEN_ADDRESS=/tmp/nvimsocket nvim $1
 }
@@ -60,6 +31,15 @@ function vim() {
 function vimd() {
   nvim --cmd "set rtp+=$(pwd)" .
 }
+
+# Nvim Remote
+alias nr='nvr --servername /tmp/nvimsocket --remote'
+alias nrs='nvr --servername /tmp/nvimsocket --remote-send'
+alias nre='nvr --servername /tmp/nvimsocket --remote-expr'
+alias h='nvr --servername /tmp/vimsocket -o'
+alias v='nvr --servername /tmp/vimsocket -O'
+alias t='nvr --servername /tmp/vimsocket --remote-tab'
+
 
 #------------------------------------------------- SHARED
 alias s='sudo'
@@ -71,7 +51,6 @@ alias cb='xsel --clipboard'
 alias rr='cd /home/kd/repos'
 alias pro='zsh ~/.config/init/scripts/project_launcher'
 # ------------------------------ Apt get
-
 alias install='sudo apt-get install -y'
 alias update='sudo apt-get update'
 alias upgrade='sudo apt-get update && sudo apt-get upgrade'
@@ -83,9 +62,7 @@ alias findapp='sudo apt list --installed | grep -i '
 #
 alias yi='yarn install --prefer-offline'
 
-
 # --------------------------------File Ops
-
 alias c='clear'
 alias l='ls'
 alias laa='ls -a'
@@ -94,18 +71,17 @@ alias lhh='ls -d .?* '
 alias lh='ls -ld .?* '
 
 function Del() {
-  sudo trash $1
+  sudo trash-put $1
 }
 
 function del() {
-  trash $1
+  trash-put $1
 }
 
 alias es='sudo chmod u+x'
 
 
 # ---------------------------------TMUX
-
 alias tm='tmux -f ~/.config/tmux/tmux.conf'
 alias tas='tmux a -t'
 alias tks='tmux kill-session -t'
@@ -135,21 +111,12 @@ dkid() {
   docker ps | grep $1 | awk '{print $1}'
 }
 
-
-
 # ---------------------------------Utilities
 
 alias rpid='ps -A | grep'
 alias ip='ifconfig eth0'
 
-
-alias s1='ssh -R 52698:localhost:52698 kd@151.80.141.108'
-alias s2='ssh -R 52698:localhost:52698 kd@54.36.99.98'
-
 alias f='fzf'
-# alias vim='vim -u ~/.vim/vimrc/.vimrc'
-
-alias st=' cd /home/kd/repos/server-tools ; bash server_tools'
 
 # --------------------------------
 
@@ -189,30 +156,24 @@ function ac() {
   git commit -m ":$emoji: $msg"
 }
 
-
-pl() {
-
-
-	REPO_DIR=~/repos
-	cd $REPO_DIR 
-
-	dirs=(*/)
-
-	read -p "$(
-		f=0
-		for dirname in "${dirs[@]}" ; do
-			echo "$((++f)): $dirname"
-		done
-
-		echo -ne 'Please select a directory > '
-	)" selection
-
-	selected_dir="${dirs[$((selection-1))]}"
-
-	SELECTED="$REPO_DIR/$selected_dir"
-
-	echo $SELECTED
-
-	cd $SELECTED
-	exec zsh
+function git_upload_ssh_key () {
+  read -p "Enter github email : " email
+  echo "Using email $email"
+  if [ ! -f ~/.ssh/id_rsa ]; then
+    ssh-keygen -t rsa -b 4096 -C "$email"
+    ssh-add ~/.ssh/id_rsa
+  fi
+  pub=`cat ~/.ssh/id_rsa.pub`
+  read -p "Enter github username: " githubuser
+  echo "Using username $githubuser"
+  read -s -p "Enter github password for user $githubuser: " githubpass
+  echo
+  read -p "Enter github OTP: " otp
+  echo "Using otp $otp"
+  echo
+  confirm
+  curl -u "$githubuser:$githubpass" -X POST -d "{\"title\":\"`hostname`\",\"key\":\"$pub\"}" --header "x-github-otp: $otp" https://api.github.com/user/keys
 }
+
+
+

@@ -10,13 +10,15 @@
     { "pos": "e", "letters": [ "#" ] },
     { "pos": "r", "letters": [ "_" ] },
     { "pos": "t", "letters": [ "%" ] },
-  
+
     { "pos": "y", "letters": [ "%" ] },
     { "pos": "u", "letters": [ "Home" ] },
     { "pos": "i", "letters": [ "PageDown" ] },
     { "pos": "o", "letters": [ "PageUp" ] },
     { "pos": "p", "letters": [ "End" ] },
-     
+
+    { "pos": "[", "letters": [ "Backspace" ] },
+    
     { "pos": "a", "letters": [ "?" ] },
     { "pos": "s", "letters": [ "`" ] },
     { "pos": "d", "letters": [ "\"" ] },

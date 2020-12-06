@@ -1,14 +1,11 @@
-// Extend layout based on DreymaR's Extend mappings
-// https://forum.colemak.com/topic/2014-extend-extra-extreme/
 {
   "filter": "no klc,keylayout",
   "singletonKeys": [
-    [ "CapsLock", "Extend" ]
+    [ "Win_R", "Extend" ]
   ],
-  "shiftlevels": [ "Extend", "Shift+Extend" ],
+  "shiftlevels": [ "Extend", "Extend+Shift" ],
   "keys": [
-      
-    { "pos": "q", "letters": [ "!" ] },
+    { "pos": "q", "letters": [ "!", "?"] },
     { "pos": "w", "letters": [ "@" ] },
     { "pos": "e", "letters": [ "#" ] },
     { "pos": "r", "letters": [ "_" ] },
@@ -32,6 +29,8 @@
     { "pos": "l", "letters": [ "Up" ] },
     { "pos": ";", "letters": [ "Right" ] },
      
+    { "pos": "'", "letters": [ "Enter" ] },
+    
     { "pos": "z", "letters": [ "|" ] },
     { "pos": "x", "letters": [ "[" ] },
     { "pos": "c", "letters": [ "{" ] },
@@ -42,6 +41,7 @@
     { "pos": "m", "letters": [ ")" ] },
     { "pos": ",", "letters": [ "}" ] },
     { "pos": ".", "letters": [ "]" ] },
-    { "pos": "/", "letters": [ "|" ] }
+    { "pos": "/", "letters": [ "~" ] }
+
   ]
 }

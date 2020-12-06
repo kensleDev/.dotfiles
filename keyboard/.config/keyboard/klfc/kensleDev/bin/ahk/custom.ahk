@@ -69,9 +69,9 @@ DeadKey(baseChar, table, name := "") {
   }
 }
 
-SC038::NumLock ; QWERTY Alt_L
-*SC03a::Extend := true ; QWERTY CapsLock
-*SC03a Up::Extend := false
+SC038::Return
+*SC15c::Extend := true ; QWERTY Win_R
+*SC15c Up::Extend := false
 *SC029::Send {Blind}{VKc0SC029 DownR} ; QWERTY ~: ~
 *SC029 up::Send {Blind}{VKc0SC029 Up}
 *SC002::Send {Blind}{VK31SC002 DownR} ; QWERTY 1: 1
@@ -249,7 +249,20 @@ if not GetKeyState("CapsLock", "T") {
 }
 Return
 #if Extend
-*SC010::Send {Blind}{U+0021} ; !
+*SC010::
+if not GetKeyState("CapsLock", "T") {
+  Send {Blind}{U+0021} ; !
+} else {
+  Send {Blind}{U+003f} ; ?
+}
+Return
++SC010::
+if not GetKeyState("CapsLock", "T") {
+  Send {Blind}{U+003f} ; ?
+} else {
+  Send {Blind}{U+0021} ; !
+}
+Return
 
 ; QWERTY W
 #if not Extend
@@ -343,6 +356,7 @@ if not GetKeyState("CapsLock", "T") {
   Send {Blind}{U+0079} ; y
 }
 Return
+>!<^SC015::Send {Blind}{U+0025} ; %
 #if Extend
 *SC015::Send {Blind}{U+0025} ; %
 
@@ -360,6 +374,20 @@ if not GetKeyState("CapsLock", "T") {
   Send {Blind}{U+0055} ; U
 } else {
   Send {Blind}{U+0075} ; u
+}
+Return
+>!<^SC016::
+if not GetKeyState("CapsLock", "T") {
+  Send {Blind}{U+0037} ; 7
+} else {
+  Send {F7}
+}
+Return
++>!<^SC016::
+if not GetKeyState("CapsLock", "T") {
+  Send {F7}
+} else {
+  Send {Blind}{U+0037} ; 7
 }
 Return
 #if Extend
@@ -381,6 +409,20 @@ if not GetKeyState("CapsLock", "T") {
   Send {Blind}{U+0069} ; i
 }
 Return
+>!<^SC017::
+if not GetKeyState("CapsLock", "T") {
+  Send {Blind}{U+0038} ; 8
+} else {
+  Send {F8}
+}
+Return
++>!<^SC017::
+if not GetKeyState("CapsLock", "T") {
+  Send {F8}
+} else {
+  Send {Blind}{U+0038} ; 8
+}
+Return
 #if Extend
 *SC017::Send {Blind}{PgDn}
 
@@ -400,6 +442,20 @@ if not GetKeyState("CapsLock", "T") {
   Send {Blind}{U+006f} ; o
 }
 Return
+>!<^SC018::
+if not GetKeyState("CapsLock", "T") {
+  Send {Blind}{U+0039} ; 9
+} else {
+  Send {F9}
+}
+Return
++>!<^SC018::
+if not GetKeyState("CapsLock", "T") {
+  Send {F9}
+} else {
+  Send {Blind}{U+0039} ; 9
+}
+Return
 #if Extend
 *SC018::Send {Blind}{PgUp}
 
@@ -417,6 +473,20 @@ if not GetKeyState("CapsLock", "T") {
   Send {Blind}{U+0050} ; P
 } else {
   Send {Blind}{U+0070} ; p
+}
+Return
+>!<^SC019::
+if not GetKeyState("CapsLock", "T") {
+  Send {Blind}{U+002b} ; +
+} else {
+  Send {F10}
+}
+Return
++>!<^SC019::
+if not GetKeyState("CapsLock", "T") {
+  Send {F10}
+} else {
+  Send {Blind}{U+002b} ; +
 }
 Return
 #if Extend
@@ -548,6 +618,7 @@ if not GetKeyState("CapsLock", "T") {
   Send {Blind}{U+0068} ; h
 }
 Return
+>!<^SC023::Send {Blind}{U+003d} ; =
 #if Extend
 *SC023::Send {Blind}{U+0024} ; $
 
@@ -565,6 +636,20 @@ if not GetKeyState("CapsLock", "T") {
   Send {Blind}{U+004a} ; J
 } else {
   Send {Blind}{U+006a} ; j
+}
+Return
+>!<^SC024::
+if not GetKeyState("CapsLock", "T") {
+  Send {Blind}{U+0034} ; 4
+} else {
+  Send {F4}
+}
+Return
++>!<^SC024::
+if not GetKeyState("CapsLock", "T") {
+  Send {F4}
+} else {
+  Send {Blind}{U+0034} ; 4
 }
 Return
 #if Extend
@@ -586,6 +671,20 @@ if not GetKeyState("CapsLock", "T") {
   Send {Blind}{U+006b} ; k
 }
 Return
+>!<^SC025::
+if not GetKeyState("CapsLock", "T") {
+  Send {Blind}{U+0035} ; 5
+} else {
+  Send {F5}
+}
+Return
++>!<^SC025::
+if not GetKeyState("CapsLock", "T") {
+  Send {F5}
+} else {
+  Send {Blind}{U+0035} ; 5
+}
+Return
 #if Extend
 *SC025::Send {Blind}{Down}
 
@@ -605,6 +704,20 @@ if not GetKeyState("CapsLock", "T") {
   Send {Blind}{U+006c} ; l
 }
 Return
+>!<^SC026::
+if not GetKeyState("CapsLock", "T") {
+  Send {Blind}{U+0036} ; 6
+} else {
+  Send {F6}
+}
+Return
++>!<^SC026::
+if not GetKeyState("CapsLock", "T") {
+  Send {F6}
+} else {
+  Send {Blind}{U+0036} ; 6
+}
+Return
 #if Extend
 *SC026::Send {Blind}{Up}
 
@@ -612,13 +725,17 @@ Return
 #if not Extend
 SC027::Send {Blind}{U+003b} ; ;
 +SC027::Send {Blind}{U+003a} ; :
+>!<^SC027::Send {Blind}{U+002d} ; -
++>!<^SC027::Send {F11}
 #if Extend
 *SC027::Send {Blind}{Right}
 
 ; QWERTY '
-#if
+#if not Extend
 SC028::Send {Blind}{U+0027} ; '
 +SC028::Send {Blind}{U+0022} ; "
+#if Extend
+*SC028::Send {Blind}{Enter}
 
 ; QWERTY Z
 #if not Extend
@@ -731,6 +848,7 @@ if not GetKeyState("CapsLock", "T") {
   Send {Blind}{U+006e} ; n
 }
 Return
+>!<^SC031::Send {Blind}{U+0030} ; 0
 #if Extend
 *SC031::Send {Blind}{U+005c} ; \
 
@@ -750,6 +868,20 @@ if not GetKeyState("CapsLock", "T") {
   Send {Blind}{U+006d} ; m
 }
 Return
+>!<^SC032::
+if not GetKeyState("CapsLock", "T") {
+  Send {Blind}{U+0031} ; 1
+} else {
+  Send {F1}
+}
+Return
++>!<^SC032::
+if not GetKeyState("CapsLock", "T") {
+  Send {F1}
+} else {
+  Send {Blind}{U+0031} ; 1
+}
+Return
 #if Extend
 *SC032::Send {Blind}{U+0029} ; )
 
@@ -757,6 +889,8 @@ Return
 #if not Extend
 SC033::Send {Blind}{U+002c} ; ,
 +SC033::Send {Blind}{U+003c} ; <
+>!<^SC033::Send {Blind}{U+0032} ; 2
++>!<^SC033::Send {F2}
 #if Extend
 *SC033::Send {Blind}{U+007d} ; }
 
@@ -764,6 +898,8 @@ SC033::Send {Blind}{U+002c} ; ,
 #if not Extend
 SC034::Send {Blind}{U+002e} ; .
 +SC034::Send {Blind}{U+003e} ; >
+>!<^SC034::Send {Blind}{U+0033} ; 3
++>!<^SC034::Send {F3}
 #if Extend
 *SC034::Send {Blind}{U+005d} ; ]
 
@@ -771,5 +907,7 @@ SC034::Send {Blind}{U+002e} ; .
 #if not Extend
 SC035::Send {Blind}{U+002f} ; /
 +SC035::Send {Blind}{U+003f} ; ?
+>!<^SC035::Send {Blind}{U+002a} ; *
++>!<^SC035::Send {F12}
 #if Extend
-*SC035::Send {Blind}{U+007c} ; |
+*SC035::Send {Blind}{U+007e} ; ~

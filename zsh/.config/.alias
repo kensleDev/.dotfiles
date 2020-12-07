@@ -157,10 +157,10 @@ function ac() {
 }
 
 function gp() {
+  git push
   echo ""
   cat ~/.config/scripts/asci/planet.txt
   echo ""
-  git push
 }
 
 alias gp='echo ""; cat ~/.config/scripts/asci/planet.txt; echo ""; git push'

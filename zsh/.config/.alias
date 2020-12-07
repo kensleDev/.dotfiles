@@ -120,7 +120,7 @@ alias ip='ifconfig eth0'
 
 alias f='fzf'
 
-# --------------------------------
+# -------------------------------- GIT
 
 alias updatesubs='git submodule foreach git pull origin master'
 
@@ -157,6 +157,8 @@ function ac() {
   git add -A
   git commit -m ":$emoji: $msg"
 }
+
+alias gp='git push'
 
 function git_upload_ssh_key () {
   read -p "Enter github email : " email

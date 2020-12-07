@@ -27,6 +27,8 @@ function INSTALL_BASE_TOOLS() {
   sudo apt-get install -y curl awesome rofi stow xdotool neofetch
   sudo apt-get install -y autotools-dev autoconf pkg-config &&
   sudo apt install -y software-properties-common &&
+  cd ~/.dotfiles && git remote remove origin && 
+  git remote add origin git@github.com:kensleDev/.dotfiles.git && git push -u origin main &&
   DOTFILE "git awesome fonts scripts vimWiki" &&
   log "Installed Base Tools" || err "Base Tools"
 }

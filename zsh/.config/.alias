@@ -154,6 +154,13 @@ function ac() {
   git commit -m ":$emoji: $msg"
 }
 
+function gp() {
+  echo ""
+  cat ~/.config/scripts/asci/planet.txt
+  echo ""
+  git push
+}
+
 alias gp='echo ""; cat ~/.config/scripts/asci/planet.txt; echo ""; git push'
 
 function git_upload_ssh_key () {

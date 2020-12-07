@@ -24,7 +24,7 @@ function DOTFILE() {
 # -- Installs
 
 function INSTALL_BASE_TOOLS() {
-  sudo apt-get install -y curl awesome rofi stow xdotool
+  sudo apt-get install -y curl awesome rofi stow xdotool neofetch
   sudo apt-get install -y autotools-dev autoconf pkg-config &&
   sudo apt install -y software-properties-common &&
   DOTFILE "git awesome fonts scripts vimWiki" &&
@@ -70,7 +70,7 @@ function INSTALL_NVM() {
   curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | bash &&
   source ~/.nvm/nvm.sh &&
   nvm install 12.13.0 &&
-  npm i -g yarn &&
+  npm i -g yarn onefetch &&
   log "Install Nvm, node, yarn" || err "Nvm"
 }
 

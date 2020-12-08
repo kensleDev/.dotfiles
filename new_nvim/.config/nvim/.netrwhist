@@ -1,5 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =8
+let g:netrw_dirhistcnt =0
+let g:netrw_dirhist_0='/home/kd/repos/sls-commerce/src'
+let g:netrw_dirhist_9='/home/kd/repos/sls-commerce'
 let g:netrw_dirhist_8='/home/kd/repos/sls-commerce/src'
 let g:netrw_dirhist_7='/home/kd/repos/sls-commerce'
 let g:netrw_dirhist_6='/home/kd/repos/kd-ecommerce'
@@ -8,5 +10,3 @@ let g:netrw_dirhist_4='/home/kd/.dotfiles/keyboard/.config/keyboard/klfc'
 let g:netrw_dirhist_3='/home/kd/.dotfiles/keyboard/.config/keyboard/klfc/kensleDev'
 let g:netrw_dirhist_2='/home/kd/.dotfiles/keyboard/.config/keyboard/klfc'
 let g:netrw_dirhist_1='/home/kd/.dotfiles/keyboard/.config/keyboard/klfc/kensleDev'
-let g:netrw_dirhist_0='/home/kd/.dotfiles/keyboard/.config/keyboard/klfc'
-let g:netrw_dirhist_9='/home/kd/.config/scripts'

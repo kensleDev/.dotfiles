@@ -25,11 +25,3 @@ fi
 if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
-
-
-if [ -f "~/.lappy" ]; then
-  sh ~/.config/keyboard/klfc/kensleDev/bin/xkb/run-session.sh
-fi
-
-xcape -e 'Super_L=Return'
-xcape -e 'ISO_Level5_Shift=BackSpace'

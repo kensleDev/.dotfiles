@@ -39,6 +39,11 @@ if [ "$TERM" != "linux" ] && [ -f "$GOPATH/bin/powerline-go" ]; then
     PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
 fi
 
+if [ -d /sys/module/battery ]; then
+  sh ~/.config/keyboard/klfc/kensleDev/bin/xkb/run-session.sh
+fi
+
+
 eval "$(starship init zsh)"
 
 # set NVIM_LISTEN_ADDRESS=/tmp/nvimsocket

@@ -83,6 +83,24 @@ function INSTALL_NVM() {
   log "Install Nvm, node, yarn" || err "Nvm"
 }
 
+function INSTALL_DOCKER() {
+  sudo apt-get remove docker docker-engine docker.io containerd runc
+  sudo apt-get update
+  sudo apt-get install \
+    apt-transport-https \
+    ca-certificates \
+    curl \
+    gnupg-agent \
+    software-properties-common -y
+  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+  sudo add-apt-repository \
+   "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+   $(lsb_release -cs) \
+   stable"
+  sudo apt-get update
+  sudo apt-get install docker-ce docker-ce-cli containerd.io -y
+}
+
 function INSTALL_TERMINAL_TOOLS() {
   # ripgrep
   curl -LO https://github.com/BurntSushi/ripgrep/releases/download/11.0.2/ripgrep_11.0.2_amd64.deb &&

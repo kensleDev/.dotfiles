@@ -1,5 +1,5 @@
 alias e='nvim'
-
+alias bat='upower -i /org/freedesktop/UPower/devices/battery_BAT0 | grep percentage'
 alias keys="clear && sed -n '/<!-- keymap -->/,/<!-- keymap end -->/p' /Users/julianiaquinandi/repos/keyboard/my_qmk_firmware/keyboards/keebio/nyquist/keymaps/kensleDev2/keymap.c"
 
 alias vbox='docker run -ti -e TZ=Asia/Kolkata -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix -e TMPDIR="/tmp/" -e TERM=xterm -e GIT_USERNAME="Your Name" -e GIT_EMAIL="YourEmail@Stealer.com"  --rm -v /etc/timezone:/etc/timezone:ro -v $HOME/tmp/:/tmp/ -v ~/.ssh:/home/spacevim/.ssh -v $(pwd):/home/spacevim/src varunbatrait/spacebox'

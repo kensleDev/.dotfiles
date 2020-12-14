@@ -69,6 +69,8 @@ endfunction
 
 autocmd CursorHold * silent call CocActionAsync('highlight')
 
+command! -nargs=0 Prettier :CocCommand prettier.formatFile
+
 
 " Symbol renaming.
 " nmap <leader>rn <Plug>(coc-rename)

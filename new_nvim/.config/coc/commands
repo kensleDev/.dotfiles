@@ -1,0 +1,3 @@
+prettier.formatFile
+eslint.executeAutofix
+eslint.executeAutofix:q

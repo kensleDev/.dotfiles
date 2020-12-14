@@ -53,9 +53,10 @@ let g:which_key_map.c = {
 
 let g:which_key_map.f = {
      \ 'name' : '+files',
-     \ 's' : [':w'                          , 'write'],
+     \ 's' : [':w | :CocCommand prettier.formatFile'                          , 'write'],
      \ 'q' : [':wq'                         , 'write + quit'],
      \ 'd' : [':%bdelete|edit #|normal `"'  , 'close all but this'],
+     \ 'f' : [':CocCommand eslint.executeAutofix'  , 'Format ESLint'],
      \ }
 
 let g:which_key_map.g = {
@@ -76,8 +77,8 @@ let g:which_key_map.s = {
       \ 'B' : [':Buffers'      , 'open buffers'],
       \ 'c' : [':Commits'      , 'commits'],
       \ 'C' : [':BCommits'     , 'buffer commits'],
-      \ 'f' : [':Files'        , 'files'],
-      \ 'g' : [':GFiles'       , 'git files'],
+      \ 'f' : [':GFiles'       , 'git-files'],
+      \ 'g' : [':Files'        , 'files'],
       \ 'G' : [':GFiles?'      , 'modified git files'],
       \ 'h' : [':History'      , 'file history'],
       \ 'H' : [':History:'     , 'command history'],

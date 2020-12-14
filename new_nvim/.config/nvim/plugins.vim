@@ -14,7 +14,7 @@ call plug#begin('~/.vim/plugged')
 	Plug 'liuchengxu/vim-which-key'
 	Plug 'junegunn/fzf.vim'
 	Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-	Plug 'kevinhwang91/rr', {'do': 'make sync'}
+	" Plug 'kevinhwang91/rr', {'do': 'make sync'}
   Plug 'mhinz/vim-startify'
 	Plug 'ChristianChiarulli/far.vim'
 	Plug 'mhinz/vim-signify'
@@ -29,7 +29,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'airblade/vim-rooter'
   Plug 'ThePrimeagen/vim-be-good'
   Plug 'vimwiki/vimwiki'
-
+  Plug 'jparise/vim-graphql'
 " Initialize plugin system
 call plug#end()
 

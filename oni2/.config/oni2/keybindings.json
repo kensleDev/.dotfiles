@@ -1,0 +1,39 @@
+
+[
+  { "key": "<TAB>", "command": "workbench.action.quickOpen", "when": "editorTextFocus" },
+  { "key": "jk", "command": "vim.esc", "when": "insertMode" },
+
+  { "key": "<space>l", "command": "whichkey.show", "when": "!insertMode" },
+
+  { "key": "<space>p", "command": "workbench.action.quickOpen", "when": "!insertMode" },
+  { "key": "<space>o", "command": "workbench.action.showCommands", "when": "!insertMode" },
+  
+  { "key": "<space>fs", "command": ":w", "when": "editorTextFocus && normalMode" },
+  { "key": "<space>fq", "command": ":wq", "when": "editorTextFocus && normalMode" },
+  { "key": "<space>ff", "command": "workbench.action.findInFiles", "when": "!insertMode" },
+  { "key": "<space>fn", "command": "workbench.action.quickOpenNavigateNextInEditorPicker", "when": "!insertMode" },
+  { "key": "<space>fp", "command": "workbench.action.quickOpenNavigatePreviousInEditorPicker", "when": "!insertMode" },
+  
+  { "key": "<space>gg", "command": "workbench.view.scm", "when": "!insertMode" },
+  { "key": "<space>gp", "command": "git.push", "when": "!insertMode" },
+
+  
+  { "key": "<space>x", "command": "workbench.view.extensions", "when": "!insertMode" },
+
+  { "key": "<space>tt", "command": ":term", "when": "editorTextFocus && normalMode" },
+  
+  { "key": "<C-j>", "command": "window.moveDown", "when": "normalMode || terminalFocu" },
+  { "key": "<C-k>", "command": "window.moveUp", "when": "normalMode || terminalFocus" },
+  { "key": "<C-h>", "command": "window.moveLeft", "when": "normalMode || terminalFocus" },
+  { "key": "<C-l>", "command": "window.moveRight","when": "normalMode || terminalFocus" },
+  
+  { "key": "<space>e", "command": "workbench.view.explorer", "when": "!insertMode" },
+
+  { "key": "<space>mk", "command": "workbench.action.maximizeEditor", "when ": "!insertMode" },
+  { "key": "<space>mm", "command": "workbench.action.evenEditorWidths", "when ": "!insertMode" },
+  { "key": "<space>mn", "command": "view.rotateForward", "when ": "!insertMode" }, 
+
+  { "key": "<space>fs", "command": "workbench.action.files.save", "when": "normalMode" }
+
+
+]

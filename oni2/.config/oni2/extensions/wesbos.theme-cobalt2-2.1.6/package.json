@@ -1,0 +1,42 @@
+{
+  "name": "theme-cobalt2",
+  "version": "2.1.6",
+  "displayName": "Cobalt2 Theme Official",
+  "description": "🔥 Official theme by Wes Bos.",
+  "publisher": "wesbos",
+  "icon": "images/logo.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wesbos/cobalt2-vscode"
+  },
+  "galleryBanner": {
+    "color": "#193549",
+    "theme": "dark"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "VSCode",
+    "Themes"
+  ],
+  "engines": {
+    "vscode": "^1.15.0"
+  },
+  "scripts": {
+    "start": "nodemon --exec vsce package"
+  },
+  "contributes": {
+    "themes": [
+      {
+        "label": "Cobalt2",
+        "uiTheme": "vs-dark",
+        "path": "./theme/cobalt2.json"
+      }
+    ]
+  },
+  "devDependencies": {
+    "nodemon": "^1.14.12",
+    "vsce": "^1.36.2"
+  }
+}

@@ -1,0 +1,84 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "command": "vscode-neovim.compositeEscape1",
+        "key": "j",
+        "when": "neovim.mode == insert && editorTextFocus",
+        "args": "j"
+    },
+    {
+        "command": "vscode-neovim.compositeEscape2",
+        "key": "k",
+        "when": "neovim.mode == insert && editorTextFocus",
+        "args": "k"
+    },
+    {
+        "key": "ctrl+1",
+        "command": "whichkey.show",
+        "when": "neovim.mode != insert && editorFocus",
+    },
+    {
+        "key": "ctrl+1",
+        "command": "whichkey.show",
+        "when": "!editorFocus",
+    },
+    {
+        "key": "space",
+        "command": "whichkey.show",
+        "when": "neovim.mode != insert && editorFocus",
+    },
+    
+    {
+        "key": "ctrl+h",
+        "command": "macros.terminalFocus",
+        "when": "neovim.mode != insert && editorFocus",
+    },
+    {
+        "key": "ctrl+h",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "terminalFocus || filesExplorerFocus || sidebarFocus",
+    },
+
+    {
+        "key": "ctrl+j",
+        "command": "workbench.action.focusLeftGroup",
+        "when": "neovim.mode != insert && editorFocus",
+    },
+    {
+        "key": "ctrl+k",
+        "command": "workbench.action.focusBelowGroup",
+        "when": "neovim.mode != insert && editorFocus",
+    },
+    {
+        "key": "ctrl+l",
+        "command": "workbench.action.focusAboveGroup",
+        "when": "neovim.mode != insert && editorFocus",
+    },
+    {
+        "key": "ctrl+;",
+        "command": "workbench.action.focusRightGroup",
+        "when": "neovim.mode != insert && editorFocus",
+    },
+
+    {
+        "key": "ctrl+shift+j",
+        "command": "workbench.action.decreaseViewSize",
+        "when": "neovim.mode != insert && editorFocus",
+    },
+    {
+        "key": "ctrl+shift+k",
+        "command": "workbench.action.decreaseViewHeight",
+        "when": "neovim.mode != insert && editorFocus",
+    },
+    { 
+        "key": "ctrl+shift+l",
+        "command": "workbench.action.increaseViewHeight",
+        "when": "neovim.mode != insert && editorFocus",
+    },
+    {
+        "key": "ctrl+shift+;",
+        "command": "workbench.action.increaseViewSize",
+        "when": "neovim.mode != insert && editorFocus",
+    },
+    
+    ]

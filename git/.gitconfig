@@ -1,3 +1,7 @@
 [user]
-	email = kensledev@gmail.com
-	name = kensleDev
+	email = julianI@cccs.co.uk
+	name = julianiaquinandi
+[init]
+	defaultBranch = dev
+[core]
+	autocrlf = input

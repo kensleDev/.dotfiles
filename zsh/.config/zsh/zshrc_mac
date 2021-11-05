@@ -1,3 +1,9 @@
+export FIREBASE_AUTH_EMULATOR_HOST="localhost:9999"
+
+
+export GOOGLE_APPLICATION_CREDENTIALS="/Users/julianiaquinandi/repos/crypto/tt/libs/be/data-access/sveacc.json"
+
+
 HOME_DIR=/Users/$USER
 
 export FZF_DEFAULT_OPTS="--ansi --preview-window 'right:60%' --preview 'bat --color=jjkkalways --style=header,grid --line-range :300 {}'"

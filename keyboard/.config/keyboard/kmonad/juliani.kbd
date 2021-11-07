@@ -17,17 +17,20 @@
   _sym (tap-hold-next-release 200 ret @sym)
 
   ;; Home row mods
-  _a (tap-hold-next-release 200 a lctl)
+  _a (tap-hold-next-release 200 a @sym)
   _s (tap-hold-next-release 200 s lalt)
   _d (tap-hold-next-release 200 d lsft)
   _f (tap-hold-next-release 200 f lmet)
   _j (tap-hold-next-release 200 j rmet)
   _k (tap-hold-next-release 200 k rsft)
   _l (tap-hold-next-release 200 l lalt)
-  _; (tap-hold-next-release 200 ; rctl)
+  _; (tap-hold-next-release 200 ; @sym)
   
   _g (tap-hold-next-release 200 g @num) 
-  _h (tap-hold-next-release 200 h @sym) 
+  _h (tap-hold-next-release 200 h @num) 
+
+  _ec (tap-hold-next-release 200 esc lctl)
+
 )
 
 (defsrc
@@ -40,12 +43,12 @@
 )
 
 (deflayer default
-  XX  XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX 
-  XX  XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX
-  XX  _    _    _    _    _    _    _    _    _    _    XX   XX   XX
-  esc @_a  @_s  @_d  @_f  @_g  @_h  @_j  @_k  @_l  @_;  XX   XX
-  XX  _    _    _    _    _    _    _    _    _    _    XX   XX
-  XX  XX   @fn  @_num          _              @_sym _   XX   XX   XX
+  XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX 
+  XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX
+  XX   _    _    _    _    _    _    _    _    _    _    XX   XX   XX
+  @_ec @_a  @_s  @_d  @_f  @_g  @_h  @_j  @_k  @_l  @_;  XX   XX
+  XX   _    _    _    _    _    _    _    _    _    _    XX   XX
+  XX   XX   @fn  @_num          _              @_sym _   XX   XX   XX
 )
 
 (deflayer symbols
